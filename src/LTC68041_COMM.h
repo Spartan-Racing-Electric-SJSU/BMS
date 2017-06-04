@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-#define I2C_WRITE_OP =
+
 
 union COMM_REG{
   uint8_t bytes[8];

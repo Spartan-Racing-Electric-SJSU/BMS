@@ -1,5 +1,5 @@
-#ifndef LTC6804_COMM_H
-#define LTC6804_COMM_H
+#ifndef LTC68041_COMM_H
+#define LTC68041_COMM_H
 
 #include <stdint.h>
 
@@ -20,9 +20,9 @@ union COMM_REG{
   } fields;
 };
 
-void LTC6804_wrcomm(uint8_t,uint8_t*[]);
-void LTC6804_stcomm(uint8_t,uint8_t*[]);
-void LTC6804_rdcomm(uint8_t,uint8_t*[]);
+void LTC6804_wrcomm(uint8_t,uint8_t[][6]);
+void LTC6804_stcomm(uint8_t);
+int8_t LTC6804_rdcomm(uint8_t,uint8_t[][8]);
 
 
 #endif

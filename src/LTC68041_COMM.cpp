@@ -6,7 +6,7 @@
 #include "LTC68041.h"
 #include <SPI.h>
 
-#include "LTC6804_COMM.h"
+#include "LTC68041_COMM.h"
 
 
 /*****************************************************//**
@@ -155,7 +155,7 @@ void LTC6804_stcomm(uint8_t total_ic //The number of ICs being written to
       cmd_index = cmd_index + 1;
     }
     //3
-    cfg_pec = (uint16_t)pec15_calc(BYTES_IN_REG, &config[current_ic-1][0]);   // calculating the PEC for each ICs configuration register data
+    cfg_pec = 0x0000;   // calculating the PEC for each ICs configuration register data
     cmd[cmd_index] = (uint8_t)(cfg_pec >> 8);
     cmd[cmd_index + 1] = (uint8_t)cfg_pec;
     cmd_index = cmd_index + 2;

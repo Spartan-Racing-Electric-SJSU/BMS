@@ -6,7 +6,7 @@
 
 
 union COMM_REG{
-  uint8_t bytes[8];
+  uint8_t bytes[6];
   struct COMM{
     uint8_t ICOM0 : 4;
     uint8_t D0 : 8;

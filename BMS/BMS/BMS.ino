@@ -6,36 +6,81 @@
 #include "LTC68041.h"
 #include "LTC68041_COMM.h"
 #include <SPI.h>
+#include "mcp2515.h"
+#include "Canbus.h"	
 
-#define TOTAL_IC 2
+#define TOTAL_IC 8
+#define DEBUG 1
+#define TEMP_RD_BASE_ADDR 0x28
+#define TEMP_WR_BASE_ADDR 0x29
+#define MAIN_CURR A0
+#define CHGR_CURR A1
+
+float voltages[TOTAL_IC][9];
+float current;
+float resistance[TOTAL_IC][9];
 
 void setup() {
 	Serial.begin(115200);
-	LTC6804_initialize();  //Initialize LTC6804 hardware
+	//LTC6804_initialize();  //Initialize LTC6804 hardware
+
+	pinMode(6, OUTPUT);
+	digitalWrite(6, HIGH); //setup fault
+	
+	spi_enable(SPI_CLOCK_DIV16);
+	set_adc(MD_NORMAL, DCP_DISABLED, CELL_CH_ALL, AUX_CH_ALL);
+	
 	init_cfg();        //initialize the 6804 configuration array to be written
+
+	if (mcp2515_init(CANSPEED_500)) {
+#if (DEBUG) 
+		Serial.println("CAN init OK"); 
+#endif
+	}
+#if (DEBUG)
+	else {
+		Serial.println("CAN init FAIL");
+	}
+#endif
 }
 
 void loop() {
-	Serial.println("sending wrcomm");
-	uint8_t data[TOTAL_IC][6] = { {0x6A, 0x08, 0x00, 0x18, 0x0A, 0xA9},
-								  {0x6A, 0x08, 0x00, 0x18, 0x0A, 0xA9} };
-	
-	print_txdata(data);
-
-	LTC6804_wrcomm(TOTAL_IC, data);
-	LTC6804_stcomm(TOTAL_IC);
-	
-	uint8_t rd_data[TOTAL_IC][8];
-
-	if (LTC6804_rdcomm(TOTAL_IC, rd_data)) {
-		Serial.println("Error reading I2C device");
-	}
-	else {
-		Serial.println("Got data!");
-		print_rxdata(rd_data);
-	}
+	read_cells(voltages);
+	read_current(current);
 
 }
+
+int8_t read_cells(float cellv[TOTAL_IC][9]) {
+	uint16_t cell_codes[TOTAL_IC][12]; //allocate temp measure memory	
+	wakeup_idle();
+	LTC6804_adcv(); //command cell measurement
+	int8_t error = LTC6804_rdcv(0, TOTAL_IC, cell_codes); //read measured voltages
+	if (error) {
+		set_fault();
+	}
+	for (int current_ic = 0; current_ic < TOTAL_IC; current_ic++) {
+		for (int i = 0; i < 12; i++) { //convert fixed point to floating point
+			float voltage = cell_codes[current_ic][i] * 0.0001;
+			cellv[current_ic][i] = voltage;
+			if (voltage < 2.35 || voltage > 4.35) {
+				set_fault(); //voltage out of range
+			}
+			if (!(i % 5)) i++;
+			if (i == 11) i++;
+		}
+	}
+}
+
+void set_fault() {
+	digitalWrite(6, LOW);
+}
+
+float read_current(uint8_t sensor) {
+	int measure = analogRead(sensor);
+	return 200 * (measure / 820);
+}
+
+#if (DEBUG)
 
 void print_txdata(uint8_t rx_cfg[][6])
 {
@@ -100,12 +145,15 @@ void serial_print_hex(uint8_t data)
 		Serial.print((byte)data, HEX);
 }
 
+#endif
+
 
 /*!***********************************
 \brief Initializes the configuration array
 **************************************/
 void init_cfg()
 {
-	uint8_t tx_cfg[TOTAL_IC][6] = { { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00 } };
+	uint8_t tx_cfg[TOTAL_IC][6] = { { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00 },
+									{ 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00 } };
 	LTC6804_wrcfg(TOTAL_IC, tx_cfg);
 }

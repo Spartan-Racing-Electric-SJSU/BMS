@@ -190,7 +190,7 @@ uint8_t mcp2515_init(uint8_t speed)
 	
 	// reset device to normal mode
 	mcp2515_write_register(CANCTRL, 0);
-//	SET(LED2_HIGH);
+	//SET(LED2_HIGH);
 	return true;
 }
 

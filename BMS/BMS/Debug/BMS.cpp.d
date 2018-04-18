@@ -18,4 +18,8 @@ C:\Users\nykos\AppData\Local\Temp\VMBuilds\BMS\uno\Debug\BMS.cpp.o: \
  C:\Users\nykos\OneDrive\Documents\Arduino\libraries\LTSketchbook\libraries\UserInterface/UserInterface.h \
  C:\Users\nykos\AppData\Local\Temp\VMBuilds\BMS\uno\Debug\LTC68041.h \
  C:\Users\nykos\AppData\Local\Temp\VMBuilds\BMS\uno\Debug\LTC68041_COMM.h \
+ C:\Users\nykos\AppData\Local\Temp\VMBuilds\BMS\uno\Debug\mcp2515.h \
+ C:\Users\nykos\AppData\Local\Temp\VMBuilds\BMS\uno\Debug\mcp2515_defs.h \
+ C:\Users\nykos\AppData\Local\Temp\VMBuilds\BMS\uno\Debug\global.h \
+ C:\Users\nykos\AppData\Local\Temp\VMBuilds\BMS\uno\Debug\Canbus.h \
  C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2017\Community\Common7\IDE\Extensions\02oghilb.30b\Micro\ Platforms\default\debuggers\VM_DBG/VM_DBG.h

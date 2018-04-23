@@ -1,9 +1,12 @@
-// 
-// 
-// 
-
+// BMS_TEMP.cpp
+// Temperature Calculations and ADC for the BMS
+// Authors: Alex Sternberg
+// 			Thinh Le
+// Property of Spartan Racing Electric 2018
+#include <math.h>
 #include "BMS_TEMP.h"
 #include "LTC68041_COMM.h"
+#include "HardwareSerial.h"
 
 static uint8_t index = 0;
 
@@ -11,15 +14,15 @@ int8_t BMS_TEMP_next(float rx_temp[TOTAL_IC]) {
 
 	Serial.println("sending wrcomm");
 	COMM_WR_REG reg;
-	reg.fields.ICOM0 = 0x6; //send start
-	reg.fields.D0 = TEMP_RD_BASE_ADDR + (index << 1); //to adc channel addr
-	reg.fields.FCOM0 = 0x8; //send nack
-	reg.fields.ICOM1 = 0x0; //send blank
-	reg.fields.D1 =    0x00; //send empty byte
-	reg.fields.FCOM1 = 0x8; //send NACK+STOP
-	reg.fields.ICOM2 = 0x0; //no send
-	reg.fields.D2 =    0x00; //empty byte
-	reg.fields.FCOM2 = 0x9; //send ack
+	reg.fields.ICOM0 = 0x6; 							// send start
+	reg.fields.D0 = TEMP_RD_BASE_ADDR + (index << 1); 	// to adc channel addr
+	reg.fields.FCOM0 = 0x8; 							// send nack
+	reg.fields.ICOM1 = 0x0;  							// send blank
+	reg.fields.D1 =    0x00; 							// send empty byte
+	reg.fields.FCOM1 = 0x8;  							// send NACK+STOP
+	reg.fields.ICOM2 = 0x0;  							// no send
+	reg.fields.D2 =    0x00; 							// empty byte
+	reg.fields.FCOM2 = 0x9;  							// send ack
 
 	uint8_t tx_data[TOTAL_IC][6];
 	//now build copies for each ic
@@ -27,7 +30,7 @@ int8_t BMS_TEMP_next(float rx_temp[TOTAL_IC]) {
 		memcpy(tx_data[i], reg.bytes, 6);
 	}
 
-	print_txdata(tx_data);
+	Serial.println
 
 	//transmit to pack
 	LTC6804_wrcomm(TOTAL_IC, tx_data);
@@ -43,7 +46,7 @@ int8_t BMS_TEMP_next(float rx_temp[TOTAL_IC]) {
 	}
 	else {
 		Serial.println("Got data!");
-		print_rxdata(rd_data);
+		// print_rxdata(rd_data);
 	}
 
 	COMM_RD_REG rd_reg;
@@ -66,14 +69,14 @@ int8_t BMS_TEMP_next(float rx_temp[TOTAL_IC]) {
 
 
 
-float convert(uint16	_t measure) {
+float convert(uint16_t measure) {
 	float resistance = SERIESRESISTOR / (65535 / measure - 1);
 	float steinhart;
-	steinhart = resistance / THERMISTORNOMINAL;     // (R/Ro)
-	steinhart = log(steinhart);                  // ln(R/Ro)
-	steinhart /= BCOEFFICIENT;                   // 1/B * ln(R/Ro)
-	steinhart += 1.0 / (TEMPERATURENOMINAL + 273.15); // + (1/To)
-	steinhart = 1.0 / steinhart;                 // Invert
-	steinhart -= 273.15;                         // convert to C
+	steinhart = resistance / THERMISTORNOMINAL;     	// (R/Ro)
+	steinhart = log(steinhart);                  		// ln(R/Ro)
+	steinhart /= BCOEFFICIENT;                   		// 1/B * ln(R/Ro)
+	steinhart += 1.0 / (TEMPERATURENOMINAL + 273.15); 	// + (1/To)
+	steinhart = 1.0 / steinhart;                 		// Invert
+	steinhart -= 273.15;                         		// convert to C
 	return steinhart;
 }

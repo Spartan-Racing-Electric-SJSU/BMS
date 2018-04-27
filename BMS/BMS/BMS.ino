@@ -1,7 +1,7 @@
 // BMS.ino 
 // Temperature Calculations and ADC for the BMS
 // Authors: Alex Sternberg
-// 			Thinh Le
+// 			    Thinh Le
 // Property of Spartan Racing Electric 2018
 #include <Linduino.h>
 #include <SoftwareSerial.h>

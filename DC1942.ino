@@ -1,3 +1,5 @@
+#include <Linduino.h>
+
 /*!
 DC1942B
 LTC6804-2: Battery stack monitor
@@ -93,7 +95,7 @@ Copyright 2013 Linear Technology Corp. (LTC)
 
 #include <Arduino.h>
 #include <stdint.h>
-#include "Linduino/Linduino.h"
+#include <Linduino.h>
 #include "LT_SPI.h"
 #include "UserInterface.h"
 #include "LTC68042.h"

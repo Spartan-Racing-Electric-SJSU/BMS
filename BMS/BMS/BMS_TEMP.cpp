@@ -28,9 +28,9 @@ int8_t BMS_TEMP_next(float rx_temp[TOTAL_IC]) {
 	//now build copies for each ic
 	for (int i = 1; i < TOTAL_IC; i++) {
 		memcpy(tx_data[i], reg.bytes, 6);
-	}
-
-	Serial.println
+		Serial.write((const char *)tx_data[i]);
+		Serial.println("Wrote data!\n");
+	}	
 
 	//transmit to pack
 	LTC6804_wrcomm(TOTAL_IC, tx_data);
@@ -41,11 +41,12 @@ int8_t BMS_TEMP_next(float rx_temp[TOTAL_IC]) {
 	int8_t res;
 
 	if (LTC6804_rdcomm(TOTAL_IC, rd_data)) {
-		Serial.println("Error reading I2C device");
+		Serial.println("Error reading I2C device\n");
 		res |= 1 << 8; //set pec error
 	}
 	else {
-		Serial.println("Got data!");
+		Serial.println("Got data!\n");
+		Serial.println((const char *)rd_data);
 		// print_rxdata(rd_data);
 	}
 

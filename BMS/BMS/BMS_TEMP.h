@@ -1,8 +1,12 @@
 // BMS_TEMP.h
+<<<<<<< HEAD
 // Temperature Calculations and ADC for the BMS
 // Authors: Alex Sternberg
 // 			Thinh Le
 // Property of Spartan Racing Electric 2018
+=======
+
+>>>>>>> 6b3226d0ac87ce9833bdac3e537a1ed4b99427ec
 #ifndef _BMS_TEMP_h
 #define _BMS_TEMP_h
 
@@ -19,9 +23,12 @@
 #define BCOEFFICIENT 3950
 // the value of the 'other' resistor
 #define SERIESRESISTOR 10000   
+<<<<<<< HEAD
 #define TOTAL_IC 8
 
 #include <stdint.h>
+=======
+>>>>>>> 6b3226d0ac87ce9833bdac3e537a1ed4b99427ec
 
 union COMM_WR_REG {
 	uint8_t bytes[6];

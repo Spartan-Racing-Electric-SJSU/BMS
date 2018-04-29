@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // BMS.ino 
 // Temperature Calculations and ADC for the BMS
 // Authors: Alex Sternberg
@@ -6,8 +5,6 @@
 // Property of Spartan Racing Electric 2018
 #include <Linduino.h>
 #include <SoftwareSerial.h>
-=======
->>>>>>> 6b3226d0ac87ce9833bdac3e537a1ed4b99427ec
 #include <Arduino.h>
 #include <stdint.h>
 #include "Linduino.h"
@@ -72,10 +69,7 @@ int8_t read_cells(float cellv[TOTAL_IC][9]) {
     for (int i = 0; i < 12; i++) { //convert fixed point to floating point
       float voltage = cell_codes[current_ic][i] * 0.0001;
       cellv[current_ic][i] = voltage;
-<<<<<<< HEAD
       // For 20V to BMB
-=======
->>>>>>> 6b3226d0ac87ce9833bdac3e537a1ed4b99427ec
       if (voltage < 2.22 || voltage > 4.35) {
         set_fault(); //voltage out of range
       }
@@ -170,8 +164,4 @@ void init_cfg()
   uint8_t tx_cfg[TOTAL_IC][6] = { { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00 },
                   { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00 } };
   LTC6804_wrcfg(TOTAL_IC, tx_cfg);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6b3226d0ac87ce9833bdac3e537a1ed4b99427ec

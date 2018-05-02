@@ -26,6 +26,10 @@
 float voltages[TOTAL_IC][9];
 float current;
 float resistance[TOTAL_IC][9];
+uint8_t tx_cfg[TOTAL_IC][6] = { { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00 },
+                  { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00 } };  // test with print tx
+uint8_t rx_cfg[TOTAL_IC][8] = { { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00, 0x00, 0x00 },
+                  { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00, 0x00, 0x00 } };  // test with print rx
 
 void setup() {
   Serial.begin(115200);
@@ -46,7 +50,9 @@ void setup() {
   }
 #if (DEBUG)
   else {
-    Serial.println("CAN init FAIL");
+    // Serial.println("CAN init FAIL");
+    print_txdata(tx_cfg);
+  print_rxdata(rx_cfg);
   }
 #endif
 }
@@ -54,7 +60,9 @@ void setup() {
 void loop() {
   read_cells(voltages);
   read_current(current);
-
+  // test 
+  print_txdata(tx_cfg);
+  print_rxdata(rx_cfg);
 }
 
 int8_t read_cells(float cellv[TOTAL_IC][9]) {

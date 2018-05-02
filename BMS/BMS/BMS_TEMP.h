@@ -6,8 +6,6 @@
 #ifndef _BMS_TEMP_h
 #define _BMS_TEMP_h
 
-
-
 #define TEMP_BASE_ADDR 0x28
 #define TEMP_RD_BASE_ADDR TEMP_BASE_ADDR | 0x1
 #define TEMP_WR_BASE_ADDR TEMP_BASE_ADDR

@@ -10,11 +10,10 @@
 #include "Linduino.h"
 #include "LT_SPI.h"
 #include "UserInterface.h"
-#include "LTC68041.h"
-#include "LTC68041_COMM.h"
+#include <LTC68041.h>
 #include <SPI.h>
-#include "mcp2515.h"
-#include "Canbus.h"  
+#include "src/mcp2515.h"
+#include "src/Canbus.h"  
 
 #define TOTAL_IC 8
 #define DEBUG 1
@@ -43,6 +42,9 @@ void setup() {
   
   init_cfg();        //initialize the 6804 configuration array to be written
 
+// so you can build a binary without logging statements
+// since printing is the slowest operation one can do on a mcu
+// hence compiler dierctives to tell it to not build those lines in
   if (mcp2515_init(CANSPEED_500)) {
 #if (DEBUG) 
     Serial.println("CAN init OK"); 
@@ -50,44 +52,77 @@ void setup() {
   }
 #if (DEBUG)
   else {
-    // Serial.println("CAN init FAIL");
-    print_txdata(tx_cfg);
-  print_rxdata(rx_cfg);
+    Serial.println("CAN init FAIL");
   }
 #endif
+
+  Serial.println("End CAN");
 }
 
 void loop() {
-  read_cells(voltages);
-  read_current(current);
-  // test 
-  print_txdata(tx_cfg);
-  print_rxdata(rx_cfg);
+  char input;
+  do
+  {
+    Serial.println("Loop entered");
+    Serial.println("Press q to quit");
+    input = Serial.read();
+    read_cells(voltages);
+    read_current(current);
+    // test 
+    print_txdata(tx_cfg);
+    print_rxdata(rx_cfg);
+    Serial.println("End of loop");
+  } while(input != 'q');
 }
 
 int8_t read_cells(float cellv[TOTAL_IC][9]) {
-  uint16_t cell_codes[TOTAL_IC][12]; //allocate temp measure memory 
+  Serial.print("a\n");
+  //allocate temp measure memory 
+  uint16_t cell_codes[TOTAL_IC][12]; 
+  // Wake isoSPI up from idle state
   wakeup_idle();
-  LTC6804_adcv(); //command cell measurement
-  int8_t error = LTC6804_rdcv(0, TOTAL_IC, cell_codes); //read measured voltages
+  Serial.print("b\n");
+  //command cell measurement
+  LTC6804_adcv(); 
+  Serial.print("c\n");
+  //read measured voltages
+  int8_t error = LTC6804_rdcv(0, TOTAL_IC, cell_codes); 
+  Serial.print("d\n");
   if (error) {
     set_fault();
   }
+  Serial.print("e\n");
+  // Counter to see which line code steps into/over
+  int debug_count = 0;
   for (int current_ic = 0; current_ic < TOTAL_IC; current_ic++) {
-    for (int i = 0; i < 12; i++) { //convert fixed point to floating point
+    for (int i = 0; i < 12; i++) { 
+      Serial.print("Debug line: ");
+      Serial.println(debug_count++);
+      Serial.print("Iteration count: ");
+      Serial.print(current_ic);
+      Serial.println(i);
+
+      //convert fixed point to floating point
       float voltage = cell_codes[current_ic][i] * 0.0001;
       cellv[current_ic][i] = voltage;
+      
+      Serial.print("Cell voltage: ");
+      Serial.println(cellv[current_ic][i]);
+
       // For 20V to BMB
       if (voltage < 2.22 || voltage > 4.35) {
-        set_fault(); //voltage out of range
+        //voltage out of range
+        set_fault(); 
       }
       if (!(i % 5)) i++;
       if (i == 11) i++;
     }
   }
+  Serial.print("finished\n");
 }
 
 void set_fault() {
+  // Set pin 6 active low, BITCLR
   digitalWrite(6, LOW);
 }
 

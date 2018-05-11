@@ -5,7 +5,7 @@
 // Property of Spartan Racing Electric 2018
 #include <math.h>
 #include "BMS_TEMP.h"
-#include "LTC68041_COMM.h"
+#include "src/LTC68041_COMM.h"
 #include "HardwareSerial.h"
 
 static uint8_t index = 0;
@@ -73,12 +73,12 @@ int8_t BMS_TEMP_next(float rx_temp[TOTAL_IC]) {
 
 
 float convert(uint16_t measure) {
-	float resistance = SERIESRESISTOR / (65535 / measure - 1);
+	float resistance = SERIES_RESISTOR / (65535 / measure - 1);
 	float steinhart;
-	steinhart = resistance / THERMISTORNOMINAL;     	// (R/Ro)
+	steinhart = resistance / THERMISTOR_NOMINAL;     	// (R/Ro)
 	steinhart = log(steinhart);                  		// ln(R/Ro)
-	steinhart /= BCOEFFICIENT;                   		// 1/B * ln(R/Ro)
-	steinhart += 1.0 / (TEMPERATURENOMINAL + 273.15); 	// + (1/To)
+	steinhart /= BETA_COEFFICIENT;                   		// 1/B * ln(R/Ro)
+	steinhart += 1.0 / (TEMP_NOMINAL + 273.15); 	// + (1/To)
 	steinhart = 1.0 / steinhart;                 		// Invert
 	steinhart -= 273.15;                         		// convert to C
 	return steinhart;

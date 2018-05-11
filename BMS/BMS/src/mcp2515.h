@@ -3,7 +3,7 @@
 
 // ----------------------------------------------------------------------------
 /* Copyright (c) 2007 Fabian Greif
- * All rights reserved.
+ * All rights reFrved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions

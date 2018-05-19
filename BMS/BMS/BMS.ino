@@ -16,13 +16,15 @@
 #include "src/Canbus.h"  
 
 #define TOTAL_IC 8
+#define TOTAL_BMS_CHANNEL 12 // Supposed to be 9
+#define TOTAL_LTC_CHANNEL 12
 #define DEBUG 1
 #define TEMP_RD_BASE_ADDR 0x28
 #define TEMP_WR_BASE_ADDR 0x29
 #define MAIN_CURR A0
 #define CHGR_CURR A1
 
-float voltages[TOTAL_IC][9];
+float voltages[TOTAL_IC][TOTAL_BMS_CHANNEL];
 float current;
 float resistance[TOTAL_IC][9];
 uint8_t tx_cfg[TOTAL_IC][6] = { { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00 },
@@ -55,78 +57,58 @@ void setup() {
     Serial.println("CAN init FAIL");
   }
 #endif
-
-  Serial.println("End CAN");
 }
 
-void loop() {
-  char input;
-  do
-  {
-    Serial.println("Loop entered");
-    Serial.println("Press q to quit");
-    input = Serial.read();
-    read_cells(voltages);
-    read_current(current);
-    // test 
-    print_txdata(tx_cfg);
-    print_rxdata(rx_cfg);
-    Serial.println("End of loop");
-  } while(input != 'q');
-}
-
-int8_t read_cells(float cellv[TOTAL_IC][9]) {
-  Serial.print("a\n");
+// Scope for void loop
+int8_t read_cells(float cellv[TOTAL_IC][TOTAL_BMS_CHANNEL]) {  
   //allocate temp measure memory 
-  uint16_t cell_codes[TOTAL_IC][12]; 
+  uint16_t cell_codes[TOTAL_IC][TOTAL_LTC_CHANNEL]; 
   // Wake isoSPI up from idle state
-  wakeup_idle();
-  Serial.print("b\n");
+  wakeup_idle();  
   //command cell measurement
   LTC6804_adcv(); 
-  Serial.print("c\n");
   //read measured voltages
-  int8_t error = LTC6804_rdcv(0, TOTAL_IC, cell_codes); 
-  Serial.print("d\n");
+  int8_t error = LTC6804_rdcv(0, TOTAL_LTC_CHANNEL, cell_codes);   
   if (error) {
     set_fault();
-  }
-  Serial.print("e\n");
+  }  
   // Counter to see which line code steps into/over
-  int debug_count = 0;
+  // int debug_count = 0;
   for (int current_ic = 0; current_ic < TOTAL_IC; current_ic++) {
-    for (int i = 0; i < 12; i++) { 
-      Serial.print("Debug line: ");
-      Serial.println(debug_count++);
-      Serial.print("Iteration count: ");
-      Serial.print(current_ic);
-      Serial.println(i);
+    for (int i = 0; i < TOTAL_LTC_CHANNEL; i++) { 
+      // Serial.print("Iteration count: ");
+      // Serial.print(current_ic);
+      // Serial.println(i);
 
       //convert fixed point to floating point
       float voltage = cell_codes[current_ic][i] * 0.0001;
-      cellv[current_ic][i] = voltage;
-      
-      Serial.print("Cell voltage: ");
-      Serial.println(cellv[current_ic][i]);
+      // Fill in channels 10, 11, 12 with empty
+      if(i > 9)
+      {
+        cellv[current_ic][i] = 0;
+      }
+      cellv[current_ic][i] = voltage; // <- The issue
+            
+      // Serial.println(cellv[current_ic][i]);
 
       // For 20V to BMB
       if (voltage < 2.22 || voltage > 4.35) {
         //voltage out of range
-        set_fault(); 
+        // set_fault(); 
       }
       if (!(i % 5)) i++;
       if (i == 11) i++;
     }
-  }
-  Serial.print("finished\n");
+  }  
 }
 
 void set_fault() {
-  // Set pin 6 active low, BITCLR
+  // Set pin 6 (CS) active low, BITCLR
   digitalWrite(6, LOW);
 }
 
 float read_current(uint8_t sensor) {
+  // Definition in wiring_analog.c 
   int measure = analogRead(sensor);
   return 200 * (measure / 820);
 }
@@ -198,6 +180,19 @@ void serial_print_hex(uint8_t data)
 
 #endif
 
+// Our execution of functions
+void loop() {
+  char input;
+  do
+  {
+    input = Serial.read();
+    read_cells(voltages); // TODO
+    read_current(current);
+    // test 
+    print_txdata(tx_cfg);
+    print_rxdata(rx_cfg);    
+  } while(input != 'q');
+}
 
 /*!***********************************
 \brief Initializes the configuration array

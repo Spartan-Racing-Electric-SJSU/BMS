@@ -16,7 +16,7 @@
 #include "src/Canbus.h"  
 
 #define TOTAL_IC 8
-#define TOTAL_BMS_CHANNEL 12 // Supposed to be 9
+#define TOTAL_BMS_CHANNEL 9 // Supposed to be 9
 #define TOTAL_LTC_CHANNEL 12
 #define DEBUG 1
 #define TEMP_RD_BASE_ADDR 0x28
@@ -24,7 +24,7 @@
 #define MAIN_CURR A0
 #define CHGR_CURR A1
 
-float voltages[TOTAL_IC][TOTAL_BMS_CHANNEL];
+float voltages[TOTAL_IC][TOTAL_LTC_CHANNEL];
 float current;
 float resistance[TOTAL_IC][9];
 uint8_t tx_cfg[TOTAL_IC][6] = { { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00 },
@@ -60,7 +60,7 @@ void setup() {
 }
 
 // Scope for void loop
-int8_t read_cells(float cellv[TOTAL_IC][TOTAL_BMS_CHANNEL]) {  
+int8_t read_cells(float cellv[TOTAL_IC][TOTAL_LTC_CHANNEL]) {  
   //allocate temp measure memory 
   uint16_t cell_codes[TOTAL_IC][TOTAL_LTC_CHANNEL]; 
   // Wake isoSPI up from idle state
@@ -83,7 +83,7 @@ int8_t read_cells(float cellv[TOTAL_IC][TOTAL_BMS_CHANNEL]) {
       //convert fixed point to floating point
       float voltage = cell_codes[current_ic][i] * 0.0001;
       // Fill in channels 10, 11, 12 with empty
-      if(i > 9)
+      if(i > TOTAL_BMS_CHANNEL)
       {
         cellv[current_ic][i] = 0;
       }
@@ -91,10 +91,10 @@ int8_t read_cells(float cellv[TOTAL_IC][TOTAL_BMS_CHANNEL]) {
             
       // Serial.println(cellv[current_ic][i]);
 
-      // For 20V to BMB
+      // For 20V to BMB, 2.35 for 35V
       if (voltage < 2.22 || voltage > 4.35) {
         //voltage out of range
-        // set_fault(); 
+        set_fault(); 
       }
       if (!(i % 5)) i++;
       if (i == 11) i++;

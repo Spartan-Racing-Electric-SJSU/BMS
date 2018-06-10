@@ -150,3 +150,30 @@ float convert(uint16_t measure);
  * • RDCOMM
  *  - Reads 6 bytes of data followed by PEC 
  */
+
+/**
+ * LT4316, addressing resistors
+ * XORL - Lower Nibble Configuration Input, DC voltage here configures 
+ *        lower nibbles of translation byte 
+ * Channel  R6      R7
+ * A        Open    0R
+ * B        976K    102K
+ * C        976K    182K
+ * D        1M      280K
+ * E        280K    1M 
+ * F        182K    976K
+ * G        102K    976K
+ * H        0R      Open 
+ * I        887K    1M     
+*/
+
+/**
+ * LTC2451 ADC 16-bit 
+ * Continuous Conversion Sequence, Read, Write 
+ */
+
+/**
+ * ADM3260 DC/DC Converter
+ * VISO equation
+ * viso = 1.23 x (Rtop + Rbottom) / Rbottom 
+ */

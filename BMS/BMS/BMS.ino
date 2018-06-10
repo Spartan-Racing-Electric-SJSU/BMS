@@ -14,6 +14,8 @@
 #include <SPI.h>
 #include "src/mcp2515.h"
 #include "src/Canbus.h"  
+#include "src/LTC68041_COMM.h"
+// #include "BMS_TEMP.h"
 
 #define TOTAL_IC 8
 #define TOTAL_BMS_CHANNEL 9 // Supposed to be 9
@@ -31,6 +33,7 @@ uint8_t tx_cfg[TOTAL_IC][6] = { { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00 },
                   { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00 } };  // test with print tx
 uint8_t rx_cfg[TOTAL_IC][8] = { { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00, 0x00, 0x00 },
                   { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00, 0x00, 0x00 } };  // test with print rx
+// uint8_t i2c_cfg[TOTAL_IC][] = {};
 
 void setup() {
   Serial.begin(115200);
@@ -180,19 +183,135 @@ void serial_print_hex(uint8_t data)
 
 #endif
 
+//----------------------------------------------------------
+
+// I2C Command 
+union COMM_WR_REG {
+    uint8_t bytes[6];
+    // Bit fields of Write register
+    struct COMM {
+        uint8_t ICOM0   : 4;
+        uint8_t D0      : 8;
+        uint8_t FCOM0   : 4;
+        uint8_t ICOM1   : 4;
+        uint8_t D1      : 8;
+        uint8_t FCOM1   : 4;
+        uint8_t ICOM2   : 4;
+        uint8_t D2      : 8;
+        uint8_t FCOM2   : 4;
+        // uint16_t PEC    : 16;
+    } fields;
+};
+
+union COMM_RD_REG {
+    uint8_t bytes[8];
+    // Bit fields of Read register 
+    struct COMM {
+        uint8_t ICOM0   : 4;
+        uint8_t D0      : 8;
+        uint8_t FCOM0   : 4;
+        uint8_t ICOM1   : 4;
+        uint8_t D1      : 8;
+        uint8_t FCOM1   : 4;
+        uint8_t ICOM2   : 4;
+        uint8_t D2      : 8;
+        uint8_t FCOM2   : 4;
+        uint16_t PEC    : 16;
+    } fields;
+};
+
+#define SDA_GPIO4 0x20
+#define SCL_GPIO5 0x21 // 1/(2*tclk), tclk = 1us
+// #define I2C_READ_COMMAND {  }
+static uint8_t index = 0;
+int8_t BMS_I2C_NEXT();
+
 // Our execution of functions
 void loop() {
-  char input;
-  do
-  {
-    input = Serial.read();
-    read_cells(voltages); // TODO
-    read_current(current);
-    // test 
-    print_txdata(tx_cfg);
-    print_rxdata(rx_cfg);    
-  } while(input != 'q');
+  // char input;
+  // do
+  // {
+  //   input = Serial.read();
+  //   read_cells(voltages); // TODO
+  //   read_current(current);
+  //   // test 
+  //   print_txdata(tx_cfg);
+  //   print_rxdata(rx_cfg);    
+  // } while(input != 'q');
+
+  // i2c test 
+  LTC6804_initialize();
+  // LTC6804_wrcfg(TOTAL_IC, i2c_cfg);
+  int8_t bms_i2c = BMS_I2C_NEXT();
+  Serial.print("i2c error: ");
+  Serial.println(bms_i2c);
 }
+
+// Definition I2C 
+int8_t BMS_I2C_NEXT(/*float rx_i2c[TOTAL_IC]*/) // TODO: What is the point of this arg?
+{
+  // Write code for I2C Master
+  Serial.println("sending wrcomm");
+	COMM_WR_REG reg;
+	reg.fields.ICOM0 = 0x6; 							// send start
+	reg.fields.D0 = SDA_GPIO4;
+	reg.fields.FCOM0 = 0x8; 							// send nack
+	reg.fields.ICOM1 = 0x0;  							// send blank
+	reg.fields.D1 =    0x00; 							// send empty byte
+	reg.fields.FCOM1 = 0x9;  							// send NACK+STOP
+	reg.fields.ICOM2 = 0x7;  							// no send
+	reg.fields.D2 =    0x00; 							// empty byte
+	reg.fields.FCOM2 = 0x0;  							// send ack
+
+	uint8_t tx_data[TOTAL_IC][6];
+	//now build copies for each ic
+	for (int i = 1; i < TOTAL_IC; i++) {
+		memcpy(tx_data[i], reg.bytes, 6);
+		Serial.write((const char *)tx_data[i]);
+		Serial.println("Wrote data!\n");
+	}	
+
+	// print_txdata(tx_data);
+
+	//transmit to pack
+	LTC6804_wrcomm(TOTAL_IC, tx_data);
+	LTC6804_stcomm(TOTAL_IC);
+
+	uint8_t rd_data[TOTAL_IC][8];
+
+	int8_t res;
+
+  // There's already data in the read configuration array
+	if (LTC6804_rdcomm(TOTAL_IC, rd_data)) {
+		Serial.println("Error reading I2C device\n");
+		res |= 1 << 8; //set pec error
+	}
+	else {
+		Serial.println("Got data!\n");
+		Serial.println((const char *)rd_data);
+		// print_rxdata(rd_data);
+	}
+
+  // Read code for I2C Master
+	COMM_RD_REG rd_reg;
+
+	for (int i = 0; i < TOTAL_IC; i++) {
+		memcpy(rd_reg.bytes, rd_data[i], 8);//load data from sensor
+		uint16_t measure = (rd_reg.fields.D1 << 8) | (rd_reg.fields.D2); //cast data bytes to uint16
+		// rx_temp[i] = convert(measure); //convert to *C
+
+		//collect errors
+		res |= rd_reg.fields.FCOM0;
+		res |= rd_reg.fields.FCOM1;
+		res |= rd_reg.fields.FCOM2;
+	}
+	
+	index = ++index % 9;
+
+	return res; //return any errors
+}
+
+//----------------------------------------------------------
 
 /*!***********************************
 \brief Initializes the configuration array

@@ -1,0 +1,25 @@
+#include <math.h>
+#include "BMS_BALANCE.h"
+#include "src/LTC68041_COMM.h"
+#include "HardwareSerial.h"
+
+static uint8_t index = 0;
+
+int8_t DISCHARGE_PERMITTED()
+{
+    Serial.println("checking discharge");
+    COMM_WR_REG reg;
+    reg.fields.ICOM0 = ;
+	reg.fields.D0 = ;
+	reg.fields.FCOM0 = ;
+	reg.fields.ICOM1 = ;
+	reg.fields.D1 = ;
+	reg.fields.FCOM1 = ;
+	reg.fields.ICOM2 = ;
+	reg.fields.D2 = ;
+	reg.fields.FCOM2 = ;
+
+    int8_t res; 
+
+    return res; 
+}

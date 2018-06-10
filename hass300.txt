@@ -1,0 +1,2079 @@
+HASS 300-S
+
+[Info] Opened the serial port - COM1
+Raw value output: 146
+Voltage A0 OUT: 0.7135874748
+Current: 0.0000713587
+Raw value VREF: 525
+Voltage A1 VREF: 2.5659823417
+Raw value output: 237
+Voltage A0 OUT: 1.1583577394
+Current: 0.0001158358
+Raw value VREF: 53
+Voltage A1 VREF: 0.2590420246
+Raw value output: 779
+Voltage A0 OUT: 3.8074291229
+Current: 0.0003807429
+Raw value VREF: 656
+Voltage A1 VREF: 3.2062561511
+Raw value output: 257
+Voltage A0 OUT: 1.2561094760
+Current: 0.0001256109
+Raw value VREF: 699
+Voltage A1 VREF: 3.4164223670
+Raw value output: 68
+Voltage A0 OUT: 0.3323558330
+Current: 0.0000332356
+Raw value VREF: 85
+Voltage A1 VREF: 0.4154447555
+Raw value output: 767
+Voltage A0 OUT: 3.7487781047
+Current: 0.0003748778
+Raw value VREF: 504
+Voltage A1 VREF: 2.4633431434
+Raw value output: 423
+Voltage A0 OUT: 2.0674486160
+Current: 0.0002067448
+Raw value VREF: 766
+Voltage A1 VREF: 3.7438905239
+Raw value output: 59
+Voltage A0 OUT: 0.2883675384
+Current: 0.0000288368
+Raw value VREF: 191
+Voltage A1 VREF: 0.9335288047
+Raw value output: 993
+Voltage A0 OUT: 4.8533725738
+Current: 0.0004853373
+Raw value VREF: 578
+Voltage A1 VREF: 2.8250244140
+Raw value output: 594
+Voltage A0 OUT: 2.9032258987
+Current: 0.0002903226
+Raw value VREF: 716
+Voltage A1 VREF: 3.4995112419
+Raw value output: 0
+Voltage A0 OUT: 0.0000000000
+Current: 0.0000000000
+Raw value VREF: 244
+Voltage A1 VREF: 1.1925709247
+Raw value output: 666
+Voltage A0 OUT: 3.2551319599
+Current: 0.0003255132
+Raw value VREF: 382
+Voltage A1 VREF: 1.8670577049
+Raw value output: 1023
+Voltage A0 OUT: 5.0000000000
+Current: 0.0005000000
+Raw value VREF: 912
+Voltage A1 VREF: 4.4574780464
+Raw value output: 598
+Voltage A0 OUT: 2.9227762222
+Current: 0.0002922776
+Raw value VREF: 953
+Voltage A1 VREF: 4.6578688621
+Raw value output: 51
+Voltage A0 OUT: 0.2492668628
+Current: 0.0000249267
+Raw value VREF: 39
+Voltage A1 VREF: 0.1906158351
+Raw value output: 757
+Voltage A0 OUT: 3.6999022960
+Current: 0.0003699903
+Raw value VREF: 513
+Voltage A1 VREF: 2.5073313713
+Raw value output: 365
+Voltage A0 OUT: 1.7839686870
+Current: 0.0001783969
+Raw value VREF: 746
+Voltage A1 VREF: 3.6461389064
+Raw value output: 195
+Voltage A0 OUT: 0.9530791282
+Current: 0.0000953079
+Raw value VREF: 246
+Voltage A1 VREF: 1.2023460865
+Raw value output: 793
+Voltage A0 OUT: 3.8758552551
+Current: 0.0003875855
+Raw value VREF: 378
+Voltage A1 VREF: 1.8475073814
+Raw value output: 848
+Voltage A0 OUT: 4.1446723937
+Current: 0.0004144672
+Raw value VREF: 990
+Voltage A1 VREF: 4.8387098312
+Raw value output: 281
+Voltage A0 OUT: 1.3734115362
+Current: 0.0001373412
+Raw value VREF: 595
+Voltage A1 VREF: 2.9081134796
+Raw value output: 361
+Voltage A0 OUT: 1.7644183635
+Current: 0.0001764418
+Raw value VREF: 0
+Voltage A1 VREF: 0.0000000000
+Raw value output: 488
+Voltage A0 OUT: 2.3851418495
+Current: 0.0002385142
+Raw value VREF: 737
+Voltage A1 VREF: 3.6021504402
+Raw value output: 88
+Voltage A0 OUT: 0.4301075458
+Current: 0.0000430108
+Raw value VREF: 208
+Voltage A1 VREF: 1.0166177749
+Raw value output: 619
+Voltage A0 OUT: 3.0254154205
+Current: 0.0003025415
+Raw value VREF: 194
+Voltage A1 VREF: 0.9481915473
+Raw value output: 803
+Voltage A0 OUT: 3.9247312545
+Current: 0.0003924732
+Raw value VREF: 847
+Voltage A1 VREF: 4.1397848129
+Raw value output: 180
+Voltage A0 OUT: 0.8797654151
+Current: 0.0000879765
+Raw value VREF: 535
+Voltage A1 VREF: 2.6148581504
+Raw value output: 485
+Voltage A0 OUT: 2.3704788684
+Current: 0.0002370479
+Raw value VREF: 174
+Voltage A1 VREF: 0.8504399299
+Raw value output: 903
+Voltage A0 OUT: 4.4134898185
+Current: 0.0004413490
+Raw value VREF: 781
+Voltage A1 VREF: 3.8172042846
+Raw value output: 471
+Voltage A0 OUT: 2.3020527362
+Current: 0.0002302053
+Raw value VREF: 914
+Voltage A1 VREF: 4.4672532081
+Raw value output: 260
+Voltage A0 OUT: 1.2707722187
+Current: 0.0001270772
+Raw value VREF: 264
+Voltage A1 VREF: 1.2903225421
+Raw value output: 955
+Voltage A0 OUT: 4.6676440238
+Current: 0.0004667644
+Raw value VREF: 594
+Voltage A1 VREF: 2.9032258987
+Raw value output: 425
+Voltage A0 OUT: 2.0772237777
+Current: 0.0002077224
+Raw value VREF: 833
+Voltage A1 VREF: 4.0713586807
+Raw value output: 450
+Voltage A0 OUT: 2.1994135379
+Current: 0.0002199414
+Raw value VREF: 565
+Voltage A1 VREF: 2.7614858150
+Raw value output: 909
+Voltage A0 OUT: 4.4428153038
+Current: 0.0004442815
+Raw value VREF: 333
+Voltage A1 VREF: 1.6275659561
+Raw value output: 612
+Voltage A0 OUT: 2.9912023544
+Current: 0.0002991203
+Raw value VREF: 759
+Voltage A1 VREF: 3.7096774578
+Raw value output: 30
+Voltage A0 OUT: 0.1466275596
+Current: 0.0000146628
+Raw value VREF: 251
+Voltage A1 VREF: 1.2267839908
+Raw value output: 384
+Voltage A0 OUT: 1.8768328666
+Current: 0.0001876833
+Raw value VREF: 0
+Voltage A1 VREF: 0.0000000000
+Raw value output: 489
+Voltage A0 OUT: 2.3900294303
+Current: 0.0002390029
+Raw value VREF: 722
+Voltage A1 VREF: 3.5288367271
+Raw value output: 0
+Voltage A0 OUT: 0.0000000000
+Current: 0.0000000000
+Raw value VREF: 134
+Voltage A1 VREF: 0.6549364089
+Raw value output: 616
+Voltage A0 OUT: 3.0107526779
+Current: 0.0003010753
+Raw value VREF: 195
+Voltage A1 VREF: 0.9530791282
+Raw value output: 926
+Voltage A0 OUT: 4.5259041786
+Current: 0.0004525904
+Raw value VREF: 908
+Voltage A1 VREF: 4.4379277229
+Raw value output: 315
+Voltage A0 OUT: 1.5395894050
+Current: 0.0001539589
+Raw value VREF: 675
+Voltage A1 VREF: 3.2991201877
+Raw value output: 262
+Voltage A0 OUT: 1.2805473804
+Current: 0.0001280547
+Raw value VREF: 0
+Voltage A1 VREF: 0.0000000000
+Raw value output: 585
+Voltage A0 OUT: 2.8592374801
+Current: 0.0002859238
+Raw value VREF: 754
+Voltage A1 VREF: 3.6852395534
+Raw value output: 325
+Voltage A0 OUT: 1.5884653091
+Current: 0.0001588465
+Raw value VREF: 585
+Voltage A1 VREF: 2.8592374801
+Raw value output: 667
+Voltage A0 OUT: 3.2600195407
+Current: 0.0003260020
+Raw value VREF: 203
+Voltage A1 VREF: 0.9921798706
+Raw value output: 649
+Voltage A0 OUT: 3.1720430850
+Current: 0.0003172043
+Raw value VREF: 649
+Voltage A1 VREF: 3.1720430850
+Raw value output: 78
+Voltage A0 OUT: 0.3812316703
+Current: 0.0000381232
+Raw value VREF: 341
+Voltage A1 VREF: 1.6666666030
+Raw value output: 382
+Voltage A0 OUT: 1.8670577049
+Current: 0.0001867058
+Raw value VREF: 72
+Voltage A1 VREF: 0.3519061565
+Raw value output: 640
+Voltage A0 OUT: 3.1280546188
+Current: 0.0003128055
+Raw value VREF: 717
+Voltage A1 VREF: 3.5043988227
+Raw value output: 19
+Voltage A0 OUT: 0.0928641223
+Current: 0.0000092864
+Raw value VREF: 250
+Voltage A1 VREF: 1.2218964099
+Raw value output: 405
+Voltage A0 OUT: 1.9794721603
+Current: 0.0001979472
+Raw value VREF: 41
+Voltage A1 VREF: 0.2003910064
+Raw value output: 568
+Voltage A0 OUT: 2.7761485576
+Current: 0.0002776149
+Raw value VREF: 690
+Voltage A1 VREF: 3.3724339008
+Raw value output: 66
+Voltage A0 OUT: 0.3225806236
+Current: 0.0000322581
+Raw value VREF: 289
+Voltage A1 VREF: 1.4125122070
+Raw value output: 599
+Voltage A0 OUT: 2.9276638031
+Current: 0.0002927664
+Raw value VREF: 224
+Voltage A1 VREF: 1.0948191833
+Raw value output: 842
+Voltage A0 OUT: 4.1153469085
+Current: 0.0004115347
+Raw value VREF: 844
+Voltage A1 VREF: 4.1251220703
+Raw value output: 31
+Voltage A0 OUT: 0.1515151500
+Current: 0.0000151515
+Raw value VREF: 343
+Voltage A1 VREF: 1.6764417648
+Raw value output: 226
+Voltage A0 OUT: 1.1045943498
+Current: 0.0001104594
+Raw value VREF: 0
+Voltage A1 VREF: 0.0000000000
+Raw value output: 774
+Voltage A0 OUT: 3.7829911708
+Current: 0.0003782991
+Raw value VREF: 869
+Voltage A1 VREF: 4.2473115921
+Raw value output: 247
+Voltage A0 OUT: 1.2072336673
+Current: 0.0001207234
+Raw value VREF: 519
+Voltage A1 VREF: 2.5366568565
+Raw value output: 409
+Voltage A0 OUT: 1.9990224838
+Current: 0.0001999022
+Raw value VREF: 56
+Voltage A1 VREF: 0.2737047910
+Raw value output: 749
+Voltage A0 OUT: 3.6608016490
+Current: 0.0003660802
+Raw value VREF: 765
+Voltage A1 VREF: 3.7390029430
+Raw value output: 244
+Voltage A0 OUT: 1.1925709247
+Current: 0.0001192571
+Raw value VREF: 584
+Voltage A1 VREF: 2.8543498992
+Raw value output: 339
+Voltage A0 OUT: 1.6568914413
+Current: 0.0001656891
+Raw value VREF: 152
+Voltage A1 VREF: 0.7429130077
+Raw value output: 804
+Voltage A0 OUT: 3.9296188354
+Current: 0.0003929619
+Raw value VREF: 620
+Voltage A1 VREF: 3.0303030014
+Raw value output: 408
+Voltage A0 OUT: 1.9941349029
+Current: 0.0001994135
+Raw value VREF: 762
+Voltage A1 VREF: 3.7243402004
+Raw value output: 173
+Voltage A0 OUT: 0.8455523490
+Current: 0.0000845552
+Raw value VREF: 207
+Voltage A1 VREF: 1.0117301940
+Raw value output: 721
+Voltage A0 OUT: 3.5239491462
+Current: 0.0003523950
+Raw value VREF: 274
+Voltage A1 VREF: 1.3391984701
+Raw value output: 736
+Voltage A0 OUT: 3.5972628593
+Current: 0.0003597263
+Raw value VREF: 900
+Voltage A1 VREF: 4.3988270759
+Raw value output: 215
+Voltage A0 OUT: 1.0508308410
+Current: 0.0001050831
+Raw value VREF: 427
+Voltage A1 VREF: 2.0869989395
+Raw value output: 554
+Voltage A0 OUT: 2.7077224254
+Current: 0.0002707722
+Raw value VREF: 135
+Voltage A1 VREF: 0.6598240852
+Raw value output: 931
+Voltage A0 OUT: 4.5503420829
+Current: 0.0004550342
+Raw value VREF: 940
+Voltage A1 VREF: 4.5943303108
+Raw value output: 353
+Voltage A0 OUT: 1.7253177165
+Current: 0.0001725318
+Raw value VREF: 783
+Voltage A1 VREF: 3.8269794464
+Raw value output: 556
+Voltage A0 OUT: 2.7174975872
+Current: 0.0002717498
+Raw value VREF: 355
+Voltage A1 VREF: 1.7350928783
+Raw value output: 688
+Voltage A0 OUT: 3.3626587390
+Current: 0.0003362658
+Raw value VREF: 367
+Voltage A1 VREF: 1.7937438488
+Raw value output: 365
+Voltage A0 OUT: 1.7839686870
+Current: 0.0001783969
+Raw value VREF: 699
+Voltage A1 VREF: 3.4164223670
+Raw value output: 0
+Voltage A0 OUT: 0.0000000000
+Current: 0.0000000000
+Raw value VREF: 106
+Voltage A1 VREF: 0.5180840492
+Raw value output: 530
+Voltage A0 OUT: 2.5904202461
+Current: 0.0002590420
+Raw value VREF: 99
+Voltage A1 VREF: 0.4838709354
+Raw value output: 543
+Voltage A0 OUT: 2.6539590358
+Current: 0.0002653959
+Raw value VREF: 740
+Voltage A1 VREF: 3.6168131828
+Raw value output: 31
+Voltage A0 OUT: 0.1515151500
+Current: 0.0000151515
+Raw value VREF: 282
+Voltage A1 VREF: 1.3782991170
+Raw value output: 418
+Voltage A0 OUT: 2.0430107116
+Current: 0.0002043010
+Raw value VREF: 40
+Voltage A1 VREF: 0.1955034160
+Raw value output: 728
+Voltage A0 OUT: 3.5581622123
+Current: 0.0003558162
+Raw value VREF: 750
+Voltage A1 VREF: 3.6656892299
+Raw value output: 118
+Voltage A0 OUT: 0.5767350673
+Current: 0.0000576735
+Raw value VREF: 505
+Voltage A1 VREF: 2.4682307243
+Raw value output: 288
+Voltage A0 OUT: 1.4076246261
+Current: 0.0001407625
+Raw value VREF: 82
+Voltage A1 VREF: 0.4007820129
+Raw value output: 809
+Voltage A0 OUT: 3.9540567398
+Current: 0.0003954057
+Raw value VREF: 703
+Voltage A1 VREF: 3.4359726905
+Raw value output: 293
+Voltage A0 OUT: 1.4320625305
+Current: 0.0001432063
+Raw value VREF: 712
+Voltage A1 VREF: 3.4799609184
+Raw value output: 197
+Voltage A0 OUT: 0.9628542900
+Current: 0.0000962854
+Raw value VREF: 131
+Voltage A1 VREF: 0.6402736663
+Raw value output: 827
+Voltage A0 OUT: 4.0420331954
+Current: 0.0004042033
+Raw value VREF: 474
+Voltage A1 VREF: 2.3167154788
+Raw value output: 575
+Voltage A0 OUT: 2.8103616714
+Current: 0.0002810362
+Raw value VREF: 887
+Voltage A1 VREF: 4.3352885246
+Raw value output: 255
+Voltage A0 OUT: 1.2463343143
+Current: 0.0001246334
+Raw value VREF: 346
+Voltage A1 VREF: 1.6911046504
+Raw value output: 779
+Voltage A0 OUT: 3.8074291229
+Current: 0.0003807429
+Raw value VREF: 431
+Voltage A1 VREF: 2.1065492630
+Raw value output: 997
+Voltage A0 OUT: 4.8729228973
+Current: 0.0004872923
+Raw value VREF: 1002
+Voltage A1 VREF: 4.8973608016
+Raw value output: 508
+Voltage A0 OUT: 2.4828934669
+Current: 0.0002482893
+Raw value VREF: 907
+Voltage A1 VREF: 4.4330401420
+Raw value output: 366
+Voltage A0 OUT: 1.7888562679
+Current: 0.0001788856
+Raw value VREF: 189
+Voltage A1 VREF: 0.9237536430
+Raw value output: 686
+Voltage A0 OUT: 3.3528835773
+Current: 0.0003352884
+Raw value VREF: 448
+Voltage A1 VREF: 2.1896383762
+Raw value output: 258
+Voltage A0 OUT: 1.2609970569
+Current: 0.0001260997
+Raw value VREF: 637
+Voltage A1 VREF: 3.1133918762
+Raw value output: 0
+Voltage A0 OUT: 0.0000000000
+Current: 0.0000000000
+Raw value VREF: 3
+Voltage A1 VREF: 0.0146627559
+Raw value output: 642
+Voltage A0 OUT: 3.1378300189
+Current: 0.0003137830
+Raw value VREF: 553
+Voltage A1 VREF: 2.7028348445
+Raw value output: 123
+Voltage A0 OUT: 0.6011730194
+Current: 0.0000601173
+Raw value VREF: 534
+Voltage A1 VREF: 2.6099705696
+Raw value output: 98
+Voltage A0 OUT: 0.4789833545
+Current: 0.0000478983
+Raw value VREF: 0
+Voltage A1 VREF: 0.0000000000
+Raw value output: 660
+Voltage A0 OUT: 3.2258064746
+Current: 0.0003225806
+Raw value VREF: 640
+Voltage A1 VREF: 3.1280546188
+Raw value output: 36
+Voltage A0 OUT: 0.1759530782
+Current: 0.0000175953
+Raw value VREF: 403
+Voltage A1 VREF: 1.9696969985
+Raw value output: 220
+Voltage A0 OUT: 1.0752688646
+Current: 0.0001075269
+Raw value VREF: 0
+Voltage A1 VREF: 0.0000000000
+Raw value output: 589
+Voltage A0 OUT: 2.8787879943
+Current: 0.0002878788
+Raw value VREF: 651
+Voltage A1 VREF: 3.1818182468
+Raw value output: 0
+Voltage A0 OUT: 0.0000000000
+Current: 0.0000000000
+Raw value VREF: 264
+Voltage A1 VREF: 1.2903225421
+Raw value output: 359
+Voltage A0 OUT: 1.7546432018
+Current: 0.0001754643
+Raw value VREF: 0
+Voltage A1 VREF: 0.0000000000
+Raw value output: 471
+Voltage A0 OUT: 2.3020527362
+Current: 0.0002302053
+Raw value VREF: 660
+Voltage A1 VREF: 3.2258064746
+Raw value output: 0
+Voltage A0 OUT: 0.0000000000
+Current: 0.0000000000
+Raw value VREF: 132
+Voltage A1 VREF: 0.6451612472
+Raw value output: 515
+Voltage A0 OUT: 2.5171065330
+Current: 0.0002517106
+Raw value VREF: 82
+Voltage A1 VREF: 0.4007820129
+Raw value output: 484
+Voltage A0 OUT: 2.3655912876
+Current: 0.0002365591
+Raw value VREF: 688
+Voltage A1 VREF: 3.3626587390
+Raw value output: 0
+Voltage A0 OUT: 0.0000000000
+Current: 0.0000000000
+Raw value VREF: 145
+Voltage A1 VREF: 0.7086998939
+Raw value output: 495
+Voltage A0 OUT: 2.4193549156
+Current: 0.0002419355
+Raw value VREF: 50
+Voltage A1 VREF: 0.2443792819
+Raw value output: 509
+Voltage A0 OUT: 2.4877810478
+Current: 0.0002487781
+Raw value VREF: 672
+Voltage A1 VREF: 3.2844574451
+Raw value output: 6
+Voltage A0 OUT: 0.0293255119
+Current: 0.0000029326
+Raw value VREF: 173
+Voltage A1 VREF: 0.8455523490
+Raw value output: 479
+Voltage A0 OUT: 2.3411533832
+Current: 0.0002341153
+Raw value VREF: 31
+Voltage A1 VREF: 0.1515151500
+Raw value output: 557
+Voltage A0 OUT: 2.7223851680
+Current: 0.0002722385
+Raw value VREF: 691
+Voltage A1 VREF: 3.3773214817
+Raw value output: 9
+Voltage A0 OUT: 0.0439882707
+Current: 0.0000043988
+Raw value VREF: 216
+Voltage A1 VREF: 1.0557184219
+Raw value output: 551
+Voltage A0 OUT: 2.6930596828
+Current: 0.0002693060
+Raw value VREF: 162
+Voltage A1 VREF: 0.7917888641
+Raw value output: 700
+Voltage A0 OUT: 3.4213099479
+Current: 0.0003421310
+Raw value VREF: 694
+Voltage A1 VREF: 3.3919844627
+Raw value output: 96
+Voltage A0 OUT: 0.4692081928
+Current: 0.0000469208
+Raw value VREF: 449
+Voltage A1 VREF: 2.1945259571
+Raw value output: 787
+Voltage A0 OUT: 3.8465297698
+Current: 0.0003846530
+Raw value VREF: 603
+Voltage A1 VREF: 2.9472141265
+Raw value output: 463
+Voltage A0 OUT: 2.2629520893
+Current: 0.0002262952
+Raw value VREF: 390
+Voltage A1 VREF: 1.9061583518
+Raw value output: 91
+Voltage A0 OUT: 0.4447702884
+Current: 0.0000444770
+Raw value VREF: 427
+Voltage A1 VREF: 2.0869989395
+Raw value output: 636
+Voltage A0 OUT: 3.1085042953
+Current: 0.0003108504
+Raw value VREF: 583
+Voltage A1 VREF: 2.8494623184
+Raw value output: 850
+Voltage A0 OUT: 4.1544475555
+Current: 0.0004154448
+Raw value VREF: 619
+Voltage A1 VREF: 3.0254154205
+Raw value output: 331
+Voltage A0 OUT: 1.6177907943
+Current: 0.0001617791
+Raw value VREF: 562
+Voltage A1 VREF: 2.7468230724
+Raw value output: 108
+Voltage A0 OUT: 0.5278592109
+Current: 0.0000527859
+Raw value VREF: 172
+Voltage A1 VREF: 0.8406646728
+Raw value output: 786
+Voltage A0 OUT: 3.8416421890
+Current: 0.0003841642
+Raw value VREF: 338
+Voltage A1 VREF: 1.6520038604
+Raw value output: 715
+Voltage A0 OUT: 3.4946236610
+Current: 0.0003494623
+Raw value VREF: 911
+Voltage A1 VREF: 4.4525904655
+Raw value output: 155
+Voltage A0 OUT: 0.7575757503
+Current: 0.0000757576
+Raw value VREF: 272
+Voltage A1 VREF: 1.3294233083
+Raw value output: 588
+Voltage A0 OUT: 2.8739002227
+Current: 0.0002873900
+Raw value VREF: 171
+Voltage A1 VREF: 0.8357770919
+Raw value output: 609
+Voltage A0 OUT: 2.9765396118
+Current: 0.0002976540
+Raw value VREF: 706
+Voltage A1 VREF: 3.4506354331
+Raw value output: 51
+Voltage A0 OUT: 0.2492668628
+Current: 0.0000249267
+Raw value VREF: 284
+Voltage A1 VREF: 1.3880742835
+Raw value output: 440
+Voltage A0 OUT: 2.1505377292
+Current: 0.0002150538
+Raw value VREF: 62
+Voltage A1 VREF: 0.3030303001
+Raw value output: 574
+Voltage A0 OUT: 2.8054740905
+Current: 0.0002805474
+Raw value VREF: 706
+Voltage A1 VREF: 3.4506354331
+Raw value output: 46
+Voltage A0 OUT: 0.2248289346
+Current: 0.0000224829
+Raw value VREF: 258
+Voltage A1 VREF: 1.2609970569
+Raw value output: 493
+Voltage A0 OUT: 2.4095797538
+Current: 0.0002409580
+Raw value VREF: 101
+Voltage A1 VREF: 0.4936461448
+Raw value output: 677
+Voltage A0 OUT: 3.3088953495
+Current: 0.0003308895
+Raw value VREF: 708
+Voltage A1 VREF: 3.4604105949
+Raw value output: 89
+Voltage A0 OUT: 0.4349951267
+Current: 0.0000434995
+Raw value VREF: 369
+Voltage A1 VREF: 1.8035190582
+Raw value output: 414
+Voltage A0 OUT: 2.0234603881
+Current: 0.0002023460
+Raw value VREF: 77
+Voltage A1 VREF: 0.3763440847
+Raw value output: 663
+Voltage A0 OUT: 3.2404692173
+Current: 0.0003240469
+Raw value VREF: 740
+Voltage A1 VREF: 3.6168131828
+Raw value output: 93
+Voltage A0 OUT: 0.4545454502
+Current: 0.0000454545
+Raw value VREF: 350
+Voltage A1 VREF: 1.7106549739
+Raw value output: 470
+Voltage A0 OUT: 2.2971651554
+Current: 0.0002297165
+Raw value VREF: 115
+Voltage A1 VREF: 0.5620723247
+Raw value output: 727
+Voltage A0 OUT: 3.5532746315
+Current: 0.0003553275
+Raw value VREF: 727
+Voltage A1 VREF: 3.5532746315
+Raw value output: 137
+Voltage A0 OUT: 0.6695992469
+Current: 0.0000669599
+Raw value VREF: 463
+Voltage A1 VREF: 2.2629520893
+Raw value output: 376
+Voltage A0 OUT: 1.8377322196
+Current: 0.0001837732
+Raw value VREF: 98
+Voltage A1 VREF: 0.4789833545
+Raw value output: 714
+Voltage A0 OUT: 3.4897360801
+Current: 0.0003489737
+Raw value VREF: 738
+Voltage A1 VREF: 3.6070380210
+Raw value output: 111
+Voltage A0 OUT: 0.5425220012
+Current: 0.0000542522
+Raw value VREF: 416
+Voltage A1 VREF: 2.0332355499
+Raw value output: 432
+Voltage A0 OUT: 2.1114368438
+Current: 0.0002111437
+Raw value VREF: 109
+Voltage A1 VREF: 0.5327468395
+Raw value output: 749
+Voltage A0 OUT: 3.6608016490
+Current: 0.0003660802
+Raw value VREF: 708
+Voltage A1 VREF: 3.4604105949
+Raw value output: 185
+Voltage A0 OUT: 0.9042033195
+Current: 0.0000904203
+Raw value VREF: 540
+Voltage A1 VREF: 2.6392962932
+Raw value output: 316
+Voltage A0 OUT: 1.5444769859
+Current: 0.0001544477
+Raw value VREF: 121
+Voltage A1 VREF: 0.5913978099
+Raw value output: 771
+Voltage A0 OUT: 3.7683284282
+Current: 0.0003768329
+Raw value VREF: 650
+Voltage A1 VREF: 3.1769306659
+Raw value output: 263
+Voltage A0 OUT: 1.2854349613
+Current: 0.0001285435
+Raw value VREF: 679
+Voltage A1 VREF: 3.3186705112
+Raw value output: 213
+Voltage A0 OUT: 1.0410556793
+Current: 0.0001041056
+Raw value VREF: 136
+Voltage A1 VREF: 0.6647116661
+Raw value output: 775
+Voltage A0 OUT: 3.7878787517
+Current: 0.0003787879
+Raw value VREF: 496
+Voltage A1 VREF: 2.4242424964
+Raw value output: 413
+Voltage A0 OUT: 2.0185728073
+Current: 0.0002018573
+Raw value VREF: 758
+Voltage A1 VREF: 3.7047898769
+Raw value output: 126
+Voltage A0 OUT: 0.6158357620
+Current: 0.0000615836
+Raw value VREF: 176
+Voltage A1 VREF: 0.8602150917
+Raw value output: 712
+Voltage A0 OUT: 3.4799609184
+Current: 0.0003479961
+Raw value VREF: 343
+Voltage A1 VREF: 1.6764417648
+Raw value output: 568
+Voltage A0 OUT: 2.7761485576
+Current: 0.0002776149
+Raw value VREF: 776
+Voltage A1 VREF: 3.7927663326
+Raw value output: 159
+Voltage A0 OUT: 0.7771260738
+Current: 0.0000777126
+Raw value VREF: 297
+Voltage A1 VREF: 1.4516129493
+Raw value output: 644
+Voltage A0 OUT: 3.1476051807
+Current: 0.0003147605
+Raw value VREF: 212
+Voltage A1 VREF: 1.0361680984
+Raw value output: 716
+Voltage A0 OUT: 3.4995112419
+Current: 0.0003499512
+Raw value VREF: 776
+Voltage A1 VREF: 3.7927663326
+Raw value output: 123
+Voltage A0 OUT: 0.6011730194
+Current: 0.0000601173
+Raw value VREF: 393
+Voltage A1 VREF: 1.9208210945
+Raw value output: 485
+Voltage A0 OUT: 2.3704788684
+Current: 0.0002370479
+Raw value VREF: 126
+Voltage A1 VREF: 0.6158357620
+Raw value output: 760
+Voltage A0 OUT: 3.7145650386
+Current: 0.0003714565
+Raw value VREF: 730
+Voltage A1 VREF: 3.5679373741
+Raw value output: 180
+Voltage A0 OUT: 0.8797654151
+Current: 0.0000879765
+Raw value VREF: 520
+Voltage A1 VREF: 2.5415444374
+Raw value output: 355
+Voltage A0 OUT: 1.7350928783
+Current: 0.0001735093
+Raw value VREF: 105
+Voltage A1 VREF: 0.5131964683
+Raw value output: 778
+Voltage A0 OUT: 3.8025415420
+Current: 0.0003802542
+Raw value VREF: 688
+Voltage A1 VREF: 3.3626587390
+Raw value output: 536
+Voltage A0 OUT: 2.6197457313
+Current: 0.0002619746
+Raw value VREF: 909
+Voltage A1 VREF: 4.4428153038
+Raw value output: 413
+Voltage A0 OUT: 2.0185728073
+Current: 0.0002018573
+Raw value VREF: 214
+Voltage A1 VREF: 1.0459432601
+Raw value output: 829
+Voltage A0 OUT: 4.0518083572
+Current: 0.0004051808
+Raw value VREF: 642
+Voltage A1 VREF: 3.1378300189
+Raw value output: 386
+Voltage A0 OUT: 1.8866080284
+Current: 0.0001886608
+Raw value VREF: 781
+Voltage A1 VREF: 3.8172042846
+Raw value output: 139
+Voltage A0 OUT: 0.6793744087
+Current: 0.0000679374
+Raw value VREF: 52
+Voltage A1 VREF: 0.2541544437
+Raw value output: 723
+Voltage A0 OUT: 3.5337243080
+Current: 0.0003533724
+Raw value VREF: 564
+Voltage A1 VREF: 2.7565982341
+Raw value output: 637
+Voltage A0 OUT: 3.1133918762
+Current: 0.0003113392
+Raw value VREF: 1014
+Voltage A1 VREF: 4.9560117721
+Raw value output: 233
+Voltage A0 OUT: 1.1388074159
+Current: 0.0001138808
+Raw value VREF: 227
+Voltage A1 VREF: 1.1094819307
+Raw value output: 647
+Voltage A0 OUT: 3.1622679233
+Current: 0.0003162268
+Raw value VREF: 254
+Voltage A1 VREF: 1.2414467334
+Raw value output: 408
+Voltage A0 OUT: 1.9941349029
+Current: 0.0001994135
+Raw value VREF: 679
+Voltage A1 VREF: 3.3186705112
+Raw value output: 0
+Voltage A0 OUT: 0.0000000000
+Current: 0.0000000000
+Raw value VREF: 95
+Voltage A1 VREF: 0.4643206119
+Raw value output: 660
+Voltage A0 OUT: 3.2258064746
+Current: 0.0003225806
+Raw value VREF: 342
+Voltage A1 VREF: 1.6715541839
+Raw value output: 327
+Voltage A0 OUT: 1.5982404708
+Current: 0.0001598241
+Raw value VREF: 671
+Voltage A1 VREF: 3.2795698642
+Raw value output: 38
+Voltage A0 OUT: 0.1857282543
+Current: 0.0000185728
+Raw value VREF: 90
+Voltage A1 VREF: 0.4398827075
+Raw value output: 725
+Voltage A0 OUT: 3.5434994697
+Current: 0.0003543499
+Raw value VREF: 453
+Voltage A1 VREF: 2.2140762805
+Raw value output: 322
+Voltage A0 OUT: 1.5738025665
+Current: 0.0001573803
+Raw value VREF: 725
+Voltage A1 VREF: 3.5434994697
+Raw value output: 121
+Voltage A0 OUT: 0.5913978099
+Current: 0.0000591398
+Raw value VREF: 98
+Voltage A1 VREF: 0.4789833545
+Raw value output: 762
+Voltage A0 OUT: 3.7243402004
+Current: 0.0003724340
+Raw value VREF: 596
+Voltage A1 VREF: 2.9130010604
+Raw value output: 248
+Voltage A0 OUT: 1.2121212482
+Current: 0.0001212121
+Raw value VREF: 704
+Voltage A1 VREF: 3.4408602714
+Raw value output: 309
+Voltage A0 OUT: 1.5102639198
+Current: 0.0001510264
+Raw value VREF: 214
+Voltage A1 VREF: 1.0459432601
+Raw value output: 854
+Voltage A0 OUT: 4.1739978790
+Current: 0.0004173998
+Raw value VREF: 596
+Voltage A1 VREF: 2.9130010604
+Raw value output: 294
+Voltage A0 OUT: 1.4369501113
+Current: 0.0001436950
+Raw value VREF: 692
+Voltage A1 VREF: 3.3822093009
+Raw value output: 159
+Voltage A0 OUT: 0.7771260738
+Current: 0.0000777126
+Raw value VREF: 151
+Voltage A1 VREF: 0.7380254268
+Raw value output: 785
+Voltage A0 OUT: 3.8367546081
+Current: 0.0003836755
+Raw value VREF: 454
+Voltage A1 VREF: 2.2189638614
+Raw value output: 454
+Voltage A0 OUT: 2.2189638614
+Current: 0.0002218964
+Raw value VREF: 838
+Voltage A1 VREF: 4.0957965850
+Raw value output: 204
+Voltage A0 OUT: 0.9970674514
+Current: 0.0000997068
+Raw value VREF: 249
+Voltage A1 VREF: 1.2170088291
+Raw value output: 844
+Voltage A0 OUT: 4.1251220703
+Current: 0.0004125122
+Raw value VREF: 446
+Voltage A1 VREF: 2.1798632144
+Raw value output: 623
+Voltage A0 OUT: 3.0449657440
+Current: 0.0003044966
+Raw value VREF: 875
+Voltage A1 VREF: 4.2766375541
+Raw value output: 180
+Voltage A0 OUT: 0.8797654151
+Current: 0.0000879765
+Raw value VREF: 304
+Voltage A1 VREF: 1.4858260154
+Raw value output: 733
+Voltage A0 OUT: 3.5826001167
+Current: 0.0003582600
+Raw value VREF: 300
+Voltage A1 VREF: 1.4662756919
+Raw value output: 789
+Voltage A0 OUT: 3.8563049316
+Current: 0.0003856305
+Raw value VREF: 855
+Voltage A1 VREF: 4.1788854598
+Raw value output: 205
+Voltage A0 OUT: 1.0019550323
+Current: 0.0001001955
+Raw value VREF: 458
+Voltage A1 VREF: 2.2385141849
+Raw value output: 575
+Voltage A0 OUT: 2.8103616714
+Current: 0.0002810362
+Raw value VREF: 181
+Voltage A1 VREF: 0.8846529960
+Raw value output: 851
+Voltage A0 OUT: 4.1593351364
+Current: 0.0004159335
+Raw value VREF: 818
+Voltage A1 VREF: 3.9980449676
+Raw value output: 209
+Voltage A0 OUT: 1.0215053558
+Current: 0.0001021505
+Raw value VREF: 587
+Voltage A1 VREF: 2.8690126419
+Raw value output: 371
+Voltage A0 OUT: 1.8132942199
+Current: 0.0001813294
+Raw value VREF: 147
+Voltage A1 VREF: 0.7184750556
+Raw value output: 870
+Voltage A0 OUT: 4.2521991729
+Current: 0.0004252199
+Raw value VREF: 692
+Voltage A1 VREF: 3.3822093009
+Raw value output: 351
+Voltage A0 OUT: 1.7155425548
+Current: 0.0001715543
+Raw value VREF: 789
+Voltage A1 VREF: 3.8563049316
+Raw value output: 189
+Voltage A0 OUT: 0.9237536430
+Current: 0.0000923754
+Raw value VREF: 137
+Voltage A1 VREF: 0.6695992469
+Raw value output: 838
+Voltage A0 OUT: 4.0957965850
+Current: 0.0004095797
+Raw value VREF: 476
+Voltage A1 VREF: 2.3264906406
+Raw value output: 533
+Voltage A0 OUT: 2.6050829887
+Current: 0.0002605083
+Raw value VREF: 851
+Voltage A1 VREF: 4.1593351364
+Raw value output: 128
+Voltage A0 OUT: 0.6256109237
+Current: 0.0000625611
+Raw value VREF: 250
+Voltage A1 VREF: 1.2218964099
+Raw value output: 728
+Voltage A0 OUT: 3.5581622123
+Current: 0.0003558162
+Raw value VREF: 284
+Voltage A1 VREF: 1.3880742835
+Raw value output: 745
+Voltage A0 OUT: 3.6412513256
+Current: 0.0003641252
+Raw value VREF: 843
+Voltage A1 VREF: 4.1202344894
+Raw value output: 145
+Voltage A0 OUT: 0.7086998939
+Current: 0.0000708700
+Raw value VREF: 419
+Voltage A1 VREF: 2.0478982925
+Raw value output: 532
+Voltage A0 OUT: 2.6001954078
+Current: 0.0002600195
+Raw value VREF: 134
+Voltage A1 VREF: 0.6549364089
+Raw value output: 832
+Voltage A0 OUT: 4.0664710998
+Current: 0.0004066471
+Raw value VREF: 790
+Voltage A1 VREF: 3.8611925125
+Raw value output: 219
+Voltage A0 OUT: 1.0703812837
+Current: 0.0001070381
+Raw value VREF: 600
+Voltage A1 VREF: 2.9325513839
+Raw value output: 333
+Voltage A0 OUT: 1.6275659561
+Current: 0.0001627566
+Raw value VREF: 128
+Voltage A1 VREF: 0.6256109237
+Raw value output: 856
+Voltage A0 OUT: 4.1837730407
+Current: 0.0004183773
+Raw value VREF: 673
+Voltage A1 VREF: 3.2893450260
+Raw value output: 330
+Voltage A0 OUT: 1.6129032135
+Current: 0.0001612903
+Raw value VREF: 772
+Voltage A1 VREF: 3.7732160091
+Raw value output: 208
+Voltage A0 OUT: 1.0166177749
+Current: 0.0001016618
+Raw value VREF: 132
+Voltage A1 VREF: 0.6451612472
+Raw value output: 844
+Voltage A0 OUT: 4.1251220703
+Current: 0.0004125122
+Raw value VREF: 545
+Voltage A1 VREF: 2.6637341976
+Raw value output: 440
+Voltage A0 OUT: 2.1505377292
+Current: 0.0002150538
+Raw value VREF: 826
+Voltage A1 VREF: 4.0371456146
+Raw value output: 133
+Voltage A0 OUT: 0.6500488281
+Current: 0.0000650049
+Raw value VREF: 148
+Voltage A1 VREF: 0.7233626842
+Raw value output: 795
+Voltage A0 OUT: 3.8856306076
+Current: 0.0003885631
+Raw value VREF: 403
+Voltage A1 VREF: 1.9696969985
+Raw value output: 573
+Voltage A0 OUT: 2.8005865097
+Current: 0.0002800587
+Raw value VREF: 847
+Voltage A1 VREF: 4.1397848129
+Raw value output: 125
+Voltage A0 OUT: 0.6109481811
+Current: 0.0000610948
+Raw value VREF: 251
+Voltage A1 VREF: 1.2267839908
+Raw value output: 734
+Voltage A0 OUT: 3.5874876976
+Current: 0.0003587488
+Raw value VREF: 302
+Voltage A1 VREF: 1.4760508537
+Raw value output: 704
+Voltage A0 OUT: 3.4408602714
+Current: 0.0003440861
+Raw value VREF: 856
+Voltage A1 VREF: 4.1837730407
+Raw value output: 137
+Voltage A0 OUT: 0.6695992469
+Current: 0.0000669599
+Raw value VREF: 362
+Voltage A1 VREF: 1.7693059444
+Raw value output: 607
+Voltage A0 OUT: 2.9667644500
+Current: 0.0002966765
+Raw value VREF: 175
+Voltage A1 VREF: 0.8553275108
+Raw value output: 800
+Voltage A0 OUT: 3.9100685119
+Current: 0.0003910068
+Raw value VREF: 840
+Voltage A1 VREF: 4.1055717468
+Raw value output: 141
+Voltage A0 OUT: 0.6891495704
+Current: 0.0000689150
+Raw value VREF: 461
+Voltage A1 VREF: 2.2531769275
+Raw value output: 486
+Voltage A0 OUT: 2.3753664493
+Current: 0.0002375366
+Raw value VREF: 126
+Voltage A1 VREF: 0.6158357620
+Raw value output: 838
+Voltage A0 OUT: 4.0957965850
+Current: 0.0004095797
+Raw value VREF: 851
+Voltage A1 VREF: 4.1593351364
+Raw value output: 305
+Voltage A0 OUT: 1.4907135963
+Current: 0.0001490713
+Raw value VREF: 724
+Voltage A1 VREF: 3.5386118888
+Raw value output: 638
+Voltage A0 OUT: 3.1182794570
+Current: 0.0003118280
+Raw value VREF: 358
+Voltage A1 VREF: 1.7497556209
+Raw value output: 1023
+Voltage A0 OUT: 5.0000000000
+Current: 0.0005000000
+Raw value VREF: 982
+Voltage A1 VREF: 4.7996091842
+Raw value output: 265
+Voltage A0 OUT: 1.2952101230
+Current: 0.0001295210
+Raw value VREF: 530
+Voltage A1 VREF: 2.5904202461
+Raw value output: 322
+Voltage A0 OUT: 1.5738025665
+Current: 0.0001573803
+Raw value VREF: 101
+Voltage A1 VREF: 0.4936461448
+Raw value output: 936
+Voltage A0 OUT: 4.5747799873
+Current: 0.0004574779
+Raw value VREF: 911
+Voltage A1 VREF: 4.4525904655
+Raw value output: 398
+Voltage A0 OUT: 1.9452590942
+Current: 0.0001945259
+Raw value VREF: 792
+Voltage A1 VREF: 3.8709676742
+Raw value output: 655
+Voltage A0 OUT: 3.2013685703
+Current: 0.0003201369
+Raw value VREF: 409
+Voltage A1 VREF: 1.9990224838
+Raw value output: 815
+Voltage A0 OUT: 3.9833822250
+Current: 0.0003983382
+Raw value VREF: 583
+Voltage A1 VREF: 2.8494623184
+Raw value output: 53
+Voltage A0 OUT: 0.2590420246
+Current: 0.0000259042
+Raw value VREF: 390
+Voltage A1 VREF: 1.9061583518
+Raw value output: 298
+Voltage A0 OUT: 1.4565005302
+Current: 0.0001456500
+Raw value VREF: 0
+Voltage A1 VREF: 0.0000000000
+Raw value output: 486
+Voltage A0 OUT: 2.3753664493
+Current: 0.0002375366
+Raw value VREF: 704
+Voltage A1 VREF: 3.4408602714
+Raw value output: 33
+Voltage A0 OUT: 0.1612903118
+Current: 0.0000161290
+Raw value VREF: 153
+Voltage A1 VREF: 0.7478005886
+Raw value output: 655
+Voltage A0 OUT: 3.2013685703
+Current: 0.0003201369
+Raw value VREF: 268
+Voltage A1 VREF: 1.3098728656
+Raw value output: 489
+Voltage A0 OUT: 2.3900294303
+Current: 0.0002390029
+Raw value VREF: 752
+Voltage A1 VREF: 3.6754643917
+Raw value output: 74
+Voltage A0 OUT: 0.3616813421
+Current: 0.0000361681
+Raw value VREF: 160
+Voltage A1 VREF: 0.7820136547
+Raw value output: 725
+Voltage A0 OUT: 3.5434994697
+Current: 0.0003543499
+Raw value VREF: 354
+Voltage A1 VREF: 1.7302052974
+Raw value output: 461
+Voltage A0 OUT: 2.2531769275
+Current: 0.0002253177
+Raw value VREF: 769
+Voltage A1 VREF: 3.7585532665
+Raw value output: 125
+Voltage A0 OUT: 0.6109481811
+Current: 0.0000610948
+Raw value VREF: 150
+Voltage A1 VREF: 0.7331378459
+Raw value output: 969
+Voltage A0 OUT: 4.7360701560
+Current: 0.0004736070
+Raw value VREF: 537
+Voltage A1 VREF: 2.6246333122
+Raw value output: 524
+Voltage A0 OUT: 2.5610947608
+Current: 0.0002561095
+Raw value VREF: 862
+Voltage A1 VREF: 4.2130985260
+Raw value output: 74
+Voltage A0 OUT: 0.3616813421
+Current: 0.0000361681
+Raw value VREF: 126
+Voltage A1 VREF: 0.6158357620
+Raw value output: 760
+Voltage A0 OUT: 3.7145650386
+Current: 0.0003714565
+Raw value VREF: 390
+Voltage A1 VREF: 1.9061583518
+Raw value output: 379
+Voltage A0 OUT: 1.8523949623
+Current: 0.0001852395
+Raw value VREF: 738
+Voltage A1 VREF: 3.6070380210
+Raw value output: 76
+Voltage A0 OUT: 0.3714565038
+Current: 0.0000371457
+Raw value VREF: 101
+Voltage A1 VREF: 0.4936461448
+Raw value output: 659
+Voltage A0 OUT: 3.2209188938
+Current: 0.0003220919
+Raw value VREF: 297
+Voltage A1 VREF: 1.4516129493
+Raw value output: 691
+Voltage A0 OUT: 3.3773214817
+Current: 0.0003377321
+Raw value VREF: 1023
+Voltage A1 VREF: 5.0000000000
+Raw value output: 266
+Voltage A0 OUT: 1.3000977039
+Current: 0.0001300098
+Raw value VREF: 420
+Voltage A1 VREF: 2.0527858734
+Raw value output: 705
+Voltage A0 OUT: 3.4457478523
+Current: 0.0003445748
+Raw value VREF: 290
+Voltage A1 VREF: 1.4173997879
+Raw value output: 712
+Voltage A0 OUT: 3.4799609184
+Current: 0.0003479961
+Raw value VREF: 808
+Voltage A1 VREF: 3.9491691589
+Raw value output: 104
+Voltage A0 OUT: 0.5083088874
+Current: 0.0000508309
+Raw value VREF: 342
+Voltage A1 VREF: 1.6715541839
+Raw value output: 556
+Voltage A0 OUT: 2.7174975872
+Current: 0.0002717498
+Raw value VREF: 146
+Voltage A1 VREF: 0.7135874748
+Raw value output: 719
+Voltage A0 OUT: 3.5141739845
+Current: 0.0003514174
+Raw value VREF: 760
+Voltage A1 VREF: 3.7145650386
+Raw value output: 93
+Voltage A0 OUT: 0.4545454502
+Current: 0.0000454545
+Raw value VREF: 368
+Voltage A1 VREF: 1.7986314296
+Raw value output: 495
+Voltage A0 OUT: 2.4193549156
+Current: 0.0002419355
+Raw value VREF: 111
+Voltage A1 VREF: 0.5425220012
+Raw value output: 737
+Voltage A0 OUT: 3.6021504402
+Current: 0.0003602151
+Raw value VREF: 740
+Voltage A1 VREF: 3.6168131828
+Raw value output: 97
+Voltage A0 OUT: 0.4740957736
+Current: 0.0000474096
+Raw value VREF: 381
+Voltage A1 VREF: 1.8621701240
+Raw value output: 476
+Voltage A0 OUT: 2.3264906406
+Current: 0.0002326491
+Raw value VREF: 103
+Voltage A1 VREF: 0.5034213066
+Raw value output: 767
+Voltage A0 OUT: 3.7487781047
+Current: 0.0003748778
+Raw value VREF: 769
+Voltage A1 VREF: 3.7585532665
+Raw value output: 133
+Voltage A0 OUT: 0.6500488281
+Current: 0.0000650049
+Raw value VREF: 416
+Voltage A1 VREF: 2.0332355499
+Raw value output: 506
+Voltage A0 OUT: 2.4731183052
+Current: 0.0002473118
+Raw value VREF: 121
+Voltage A1 VREF: 0.5913978099
+Raw value output: 763
+Voltage A0 OUT: 3.7292277812
+Current: 0.0003729228
+Raw value VREF: 784
+Voltage A1 VREF: 3.8318670272
+Raw value output: 130
+Voltage A0 OUT: 0.6353860855
+Current: 0.0000635386
+Raw value VREF: 398
+Voltage A1 VREF: 1.9452590942
+Raw value output: 538
+Voltage A0 OUT: 2.6295211315
+Current: 0.0002629521
+Raw value VREF: 147
+Voltage A1 VREF: 0.7184750556
+Raw value output: 748
+Voltage A0 OUT: 3.6559140682
+Current: 0.0003655914
+Raw value VREF: 779
+Voltage A1 VREF: 3.8074291229
+Raw value output: 131
+Voltage A0 OUT: 0.6402736663
+Current: 0.0000640274
+Raw value VREF: 387
+Voltage A1 VREF: 1.8914956092
+Raw value output: 567
+Voltage A0 OUT: 2.7712609767
+Current: 0.0002771261
+Raw value VREF: 146
+Voltage A1 VREF: 0.7135874748
+Raw value output: 754
+Voltage A0 OUT: 3.6852395534
+Current: 0.0003685240
+Raw value VREF: 796
+Voltage A1 VREF: 3.8905181884
+Raw value output: 142
+Voltage A0 OUT: 0.6940371513
+Current: 0.0000694037
+Raw value VREF: 384
+Voltage A1 VREF: 1.8768328666
+Raw value output: 541
+Voltage A0 OUT: 2.6441838741
+Current: 0.0002644184
+Raw value VREF: 161
+Voltage A1 VREF: 0.7869012832
+Raw value output: 769
+Voltage A0 OUT: 3.7585532665
+Current: 0.0003758553
+Raw value VREF: 790
+Voltage A1 VREF: 3.8611925125
+Raw value output: 140
+Voltage A0 OUT: 0.6842619895
+Current: 0.0000684262
+Raw value VREF: 449
+Voltage A1 VREF: 2.1945259571
+Raw value output: 489
+Voltage A0 OUT: 2.3900294303
+Current: 0.0002390029
+Raw value VREF: 141
+Voltage A1 VREF: 0.6891495704
+Raw value output: 776
+Voltage A0 OUT: 3.7927663326
+Current: 0.0003792767
+Raw value VREF: 776
+Voltage A1 VREF: 3.7927663326
+Raw value output: 240
+Voltage A0 OUT: 1.1730204820
+Current: 0.0001173021
+Raw value VREF: 552
+Voltage A1 VREF: 2.6979472637
+Raw value output: 477
+Voltage A0 OUT: 2.3313782215
+Current: 0.0002331378
+Raw value VREF: 162
+Voltage A1 VREF: 0.7917888641
+Raw value output: 931
+Voltage A0 OUT: 4.5503420829
+Current: 0.0004550342
+Raw value VREF: 829
+Voltage A1 VREF: 4.0518083572
+Raw value output: 438
+Voltage A0 OUT: 2.1407625675
+Current: 0.0002140763
+Raw value VREF: 843
+Voltage A1 VREF: 4.1202344894
+Raw value output: 582
+Voltage A0 OUT: 2.8445747375
+Current: 0.0002844575
+Raw value VREF: 320
+Voltage A1 VREF: 1.5640273094
+Raw value output: 1023
+Voltage A0 OUT: 5.0000000000
+Current: 0.0005000000
+Raw value VREF: 976
+Voltage A1 VREF: 4.7702836990
+Raw value output: 116
+Voltage A0 OUT: 0.5669599056
+Current: 0.0000566960
+Raw value VREF: 510
+Voltage A1 VREF: 2.4926686286
+Raw value output: 194
+Voltage A0 OUT: 0.9481915473
+Current: 0.0000948192
+Raw value VREF: 0
+Voltage A1 VREF: 0.0000000000
+Raw value output: 542
+Voltage A0 OUT: 2.6490714550
+Current: 0.0002649072
+Raw value VREF: 667
+Voltage A1 VREF: 3.2600195407
+Raw value output: 3
+Voltage A0 OUT: 0.0146627559
+Current: 0.0000014663
+Raw value VREF: 151
+Voltage A1 VREF: 0.7380254268
+Raw value output: 534
+Voltage A0 OUT: 2.6099705696
+Current: 0.0002609971
+Raw value VREF: 100
+Voltage A1 VREF: 0.4887585639
+Raw value output: 538
+Voltage A0 OUT: 2.6295211315
+Current: 0.0002629521
+Raw value VREF: 881
+Voltage A1 VREF: 4.3059630393
+Raw value output: 17
+Voltage A0 OUT: 0.0830889606
+Current: 0.0000083089
+Raw value VREF: 152
+Voltage A1 VREF: 0.7429130077
+Raw value output: 556
+Voltage A0 OUT: 2.7174975872
+Current: 0.0002717498
+Raw value VREF: 131
+Voltage A1 VREF: 0.6402736663
+Raw value output: 517
+Voltage A0 OUT: 2.5268816947
+Current: 0.0002526881
+Raw value VREF: 666
+Voltage A1 VREF: 3.2551319599
+Raw value output: 0
+Voltage A0 OUT: 0.0000000000
+Current: 0.0000000000
+Raw value VREF: 119
+Voltage A1 VREF: 0.5816226482
+Raw value output: 569
+Voltage A0 OUT: 2.7810361385
+Current: 0.0002781036
+Raw value VREF: 163
+Voltage A1 VREF: 0.7966764450
+Raw value output: 469
+Voltage A0 OUT: 2.2922775745
+Current: 0.0002292278
+Raw value VREF: 663
+Voltage A1 VREF: 3.2404692173
+Raw value output: 0
+Voltage A0 OUT: 0.0000000000
+Current: 0.0000000000
+Raw value VREF: 104
+Voltage A1 VREF: 0.5083088874
+Raw value output: 614
+Voltage A0 OUT: 3.0009775161
+Current: 0.0003000977
+Raw value VREF: 229
+Voltage A1 VREF: 1.1192570924
+Raw value output: 448
+Voltage A0 OUT: 2.1896383762
+Current: 0.0002189638
+Raw value VREF: 723
+Voltage A1 VREF: 3.5337243080
+Raw value output: 40
+Voltage A0 OUT: 0.1955034160
+Current: 0.0000195503
+Raw value VREF: 122
+Voltage A1 VREF: 0.5962854385
+Raw value output: 658
+Voltage A0 OUT: 3.2160313129
+Current: 0.0003216031
+Raw value VREF: 271
+Voltage A1 VREF: 1.3245357275
+Raw value output: 450
+Voltage A0 OUT: 2.1994135379
+Current: 0.0002199414
+Raw value VREF: 722
+Voltage A1 VREF: 3.5288367271
+Raw value output: 50
+Voltage A0 OUT: 0.2443792819
+Current: 0.0000244379
+Raw value VREF: 120
+Voltage A1 VREF: 0.5865102291
+Raw value output: 708
+Voltage A0 OUT: 3.4604105949
+Current: 0.0003460410
+Raw value VREF: 349
+Voltage A1 VREF: 1.7057673931
+Raw value output: 422
+Voltage A0 OUT: 2.0625610351
+Current: 0.0002062561
+Raw value VREF: 725
+Voltage A1 VREF: 3.5434994697
+Raw value output: 81
+Voltage A0 OUT: 0.3958944320
+Current: 0.0000395894
+Raw value VREF: 122
+Voltage A1 VREF: 0.5962854385
+Raw value output: 750
+Voltage A0 OUT: 3.6656892299
+Current: 0.0003665689
+Raw value VREF: 447
+Voltage A1 VREF: 2.1847507953
+Raw value output: 352
+Voltage A0 OUT: 1.7204301357
+Current: 0.0001720430
+Raw value VREF: 729
+Voltage A1 VREF: 3.5630497932
+Raw value output: 154
+Voltage A0 OUT: 0.7526881694
+Current: 0.0000752688
+Raw value VREF: 92
+Voltage A1 VREF: 0.4496578693
+Raw value output: 764
+Voltage A0 OUT: 3.7341153621
+Current: 0.0003734116
+Raw value VREF: 669
+Voltage A1 VREF: 3.2697947025
+Raw value output: 173
+Voltage A0 OUT: 0.8455523490
+Current: 0.0000845552
+Raw value VREF: 513
+Voltage A1 VREF: 2.5073313713
+Raw value output: 412
+Voltage A0 OUT: 2.0136852264
+Current: 0.0002013685
+Raw value VREF: 95
+Voltage A1 VREF: 0.4643206119
+Raw value output: 683
+Voltage A0 OUT: 3.3382208347
+Current: 0.0003338221
+Raw value VREF: 710
+Voltage A1 VREF: 3.4701857566
+Raw value output: 0
+Voltage A0 OUT: 0.0000000000
+Current: 0.0000000000
+Raw value VREF: 128
+Voltage A1 VREF: 0.6256109237
+Raw value output: 591
+Voltage A0 OUT: 2.8885631561
+Current: 0.0002888563
+Raw value VREF: 191
+Voltage A1 VREF: 0.9335288047
+Raw value output: 431
+Voltage A0 OUT: 2.1065492630
+Current: 0.0002106549
+Raw value VREF: 700
+Voltage A1 VREF: 3.4213099479
+Raw value output: 48
+Voltage A0 OUT: 0.2346040964
+Current: 0.0000234604
+Raw value VREF: 101
+Voltage A1 VREF: 0.4936461448
+Raw value output: 725
+Voltage A0 OUT: 3.5434994697
+Current: 0.0003543499
+Raw value VREF: 392
+Voltage A1 VREF: 1.9159335136
+Raw value output: 862
+Voltage A0 OUT: 4.2130985260
+Current: 0.0004213099
+Raw value VREF: 1023
+Voltage A1 VREF: 5.0000000000
+Raw value output: 93
+Voltage A0 OUT: 0.4545454502
+Current: 0.0000454545
+Raw value VREF: 170
+Voltage A1 VREF: 0.8308895111
+Raw value output: 635
+Voltage A0 OUT: 3.1036167144
+Current: 0.0003103617
+Raw value VREF: 258
+Voltage A1 VREF: 1.2609970569
+Raw value output: 341
+Voltage A0 OUT: 1.6666666030
+Current: 0.0001666667
+Raw value VREF: 679
+Voltage A1 VREF: 3.3186705112
+Raw value output: 0
+Voltage A0 OUT: 0.0000000000
+Current: 0.0000000000
+Raw value VREF: 10
+Voltage A1 VREF: 0.0488758516
+Raw value output: 714
+Voltage A0 OUT: 3.4897360801
+Current: 0.0003489737
+Raw value VREF: 553
+Voltage A1 VREF: 2.7028348445
+Raw value output: 127
+Voltage A0 OUT: 0.6207233428
+Current: 0.0000620723
+Raw value VREF: 590
+Voltage A1 VREF: 2.8836755752
+Raw value output: 199
+Voltage A0 OUT: 0.9726295471
+Current: 0.0000972630
+Raw value VREF: 3
+Voltage A1 VREF: 0.0146627559
+Raw value output: 604
+Voltage A0 OUT: 2.9521017074
+Current: 0.0002952102
+Raw value VREF: 710
+Voltage A1 VREF: 3.4701857566
+Raw value output: 21
+Voltage A0 OUT: 0.1026392936
+Current: 0.0000102639
+Raw value VREF: 217
+Voltage A1 VREF: 1.0606060028
+Raw value output: 579
+Voltage A0 OUT: 2.8299119949
+Current: 0.0002829912
+Raw value VREF: 161
+Voltage A1 VREF: 0.7869012832
+Raw value output: 623
+Voltage A0 OUT: 3.0449657440
+Current: 0.0003044966
+Raw value VREF: 758
+Voltage A1 VREF: 3.7047898769
+Raw value output: 52
+Voltage A0 OUT: 0.2541544437
+Current: 0.0000254154
+Raw value VREF: 237
+Voltage A1 VREF: 1.1583577394
+Raw value output: 640
+Voltage A0 OUT: 3.1280546188
+Current: 0.0003128055
+Raw value VREF: 210
+Voltage A1 VREF: 1.0263929367
+Raw value output: 597
+Voltage A0 OUT: 2.9178886413
+Current: 0.0002917889
+Raw value VREF: 776
+Voltage A1 VREF: 3.7927663326
+Raw value output: 67
+Voltage A0 OUT: 0.3274682044
+Current: 0.0000327468
+Raw value VREF: 224
+Voltage A1 VREF: 1.0948191833
+Raw value output: 691
+Voltage A0 OUT: 3.3773214817
+Current: 0.0003377321
+Raw value VREF: 285
+Voltage A1 VREF: 1.3929618644
+Raw value output: 548
+Voltage A0 OUT: 2.6783969402
+Current: 0.0002678397
+Raw value VREF: 790
+Voltage A1 VREF: 3.8611925125
+Raw value output: 90
+Voltage A0 OUT: 0.4398827075
+Current: 0.0000439883
+Raw value VREF: 184
+Voltage A1 VREF: 0.8993157386
+Raw value output: 732
+Voltage A0 OUT: 3.5777125358
+Current: 0.0003577713
+Raw value VREF: 327
+Voltage A1 VREF: 1.5982404708
+Raw value output: 487
+Voltage A0 OUT: 2.3802542686
+Current: 0.0002380254
+Raw value VREF: 783
+Voltage A1 VREF: 3.8269794464
+Raw value output: 99
+Voltage A0 OUT: 0.4838709354
+Current: 0.0000483871
+Raw value VREF: 152
+Voltage A1 VREF: 0.7429130077
+Raw value output: 782
+Voltage A0 OUT: 3.8220918655
+Current: 0.0003822092
+Raw value VREF: 432
+Voltage A1 VREF: 2.1114368438
+Raw value output: 410
+Voltage A0 OUT: 2.0039100646
+Current: 0.0002003910
+Raw value VREF: 770
+Voltage A1 VREF: 3.7634408473
+Raw value output: 122
+Voltage A0 OUT: 0.5962854385
+Current: 0.0000596286
+Raw value VREF: 111
+Voltage A1 VREF: 0.5425220012
+Raw value output: 797
+Voltage A0 OUT: 3.8954057693
+Current: 0.0003895406
+Raw value VREF: 498
+Voltage A1 VREF: 2.4340176582
+Raw value output: 333
+Voltage A0 OUT: 1.6275659561
+Current: 0.0001627566
+Raw value VREF: 755
+Voltage A1 VREF: 3.6901271343
+Raw value output: 205
+Voltage A0 OUT: 1.0019550323
+Current: 0.0001001955
+Raw value VREF: 123
+Voltage A1 VREF: 0.6011730194
+Raw value output: 817
+Voltage A0 OUT: 3.9931573867
+Current: 0.0003993157
+Raw value VREF: 634
+Voltage A1 VREF: 3.0987291336
+Raw value output: 239
+Voltage A0 OUT: 1.1681329011
+Current: 0.0001168133
+Raw value VREF: 661
+Voltage A1 VREF: 3.2306940555
+Raw value output: 321
+Voltage A0 OUT: 1.5689149856
+Current: 0.0001568915
+Raw value VREF: 100
+Voltage A1 VREF: 0.4887585639
+Raw value output: 815
+Voltage A0 OUT: 3.9833822250
+Current: 0.0003983382
+Raw value VREF: 731
+Voltage A1 VREF: 3.5728249549
+Raw value output: 223
+Voltage A0 OUT: 1.0899316024
+Current: 0.0001089932
+Raw value VREF: 588
+Voltage A1 VREF: 2.8739002227
+Raw value output: 502
+Voltage A0 OUT: 2.4535679817
+Current: 0.0002453568
+Raw value VREF: 148
+Voltage A1 VREF: 0.7233626842
+Raw value output: 768
+Voltage A0 OUT: 3.7536656856
+Current: 0.0003753666
+Raw value VREF: 788
+Voltage A1 VREF: 3.8514173507
+Raw value output: 66
+Voltage A0 OUT: 0.3225806236
+Current: 0.0000322581
+Raw value VREF: 348
+Voltage A1 VREF: 1.7008798122
+Raw value output: 586
+Voltage A0 OUT: 2.8641250610
+Current: 0.0002864125
+Raw value VREF: 258
+Voltage A1 VREF: 1.2609970569
+Raw value output: 705
+Voltage A0 OUT: 3.4457478523
+Current: 0.0003445748
+Raw value VREF: 800
+Voltage A1 VREF: 3.9100685119
+Raw value output: 0
+Voltage A0 OUT: 0.0000000000
+Current: 0.0000000000
+Raw value VREF: 122
+Voltage A1 VREF: 0.5962854385
+Raw value output: 609
+Voltage A0 OUT: 2.9765396118
+Current: 0.0002976540
+Raw value VREF: 214
+Voltage A1 VREF: 1.0459432601
+Raw value output: 359
+Voltage A0 OUT: 1.7546432018
+Current: 0.0001754643
+Raw value VREF: 701
+Voltage A1 VREF: 3.4261975288
+Raw value output: 24
+Voltage A0 OUT: 0.1173020482
+Current: 0.0000117302
+Raw value VREF: 16
+Voltage A1 VREF: 0.0782013654
+Raw value output: 733
+Voltage A0 OUT: 3.5826001167
+Current: 0.0003582600
+Raw value VREF: 592
+Voltage A1 VREF: 2.8934507369
+Raw value output: 109
+Voltage A0 OUT: 0.5327468395
+Current: 0.0000532747
+Raw value VREF: 461
+Voltage A1 VREF: 2.2531769275
+Raw value output: 400
+Voltage A0 OUT: 1.9550342559
+Current: 0.0001955034
+Raw value VREF: 56
+Voltage A1 VREF: 0.2737047910
+Raw value output: 608
+Voltage A0 OUT: 2.9716520309
+Current: 0.0002971652
+Raw value VREF: 756
+Voltage A1 VREF: 3.6950147151
+Raw value output: 64
+Voltage A0 OUT: 0.3128054618
+Current: 0.0000312805
+Raw value VREF: 168
+Voltage A1 VREF: 0.8211143493
+Raw value output: 718
+Voltage A0 OUT: 3.5092864036
+Current: 0.0003509286
+Raw value VREF: 320
+Voltage A1 VREF: 1.5640273094
+Raw value output: 437
+Voltage A0 OUT: 2.1358749866
+Current: 0.0002135875
+Raw value VREF: 754
+Voltage A1 VREF: 3.6852395534
+Raw value output: 114
+Voltage A0 OUT: 0.5571847438
+Current: 0.0000557185
+Raw value VREF: 98
+Voltage A1 VREF: 0.4789833545
+Raw value output: 807
+Voltage A0 OUT: 3.9442815780
+Current: 0.0003944282
+Raw value VREF: 656
+Voltage A1 VREF: 3.2062561511
+Raw value output: 194
+Voltage A0 OUT: 0.9481915473
+Current: 0.0000948192
+Raw value VREF: 581
+Voltage A1 VREF: 2.8396871566
+Raw value output: 350
+Voltage A0 OUT: 1.7106549739
+Current: 0.0001710655
+Raw value VREF: 89
+Voltage A1 VREF: 0.4349951267
+Raw value output: 720
+Voltage A0 OUT: 3.5190615653
+Current: 0.0003519061
+Raw value VREF: 775
+Voltage A1 VREF: 3.7878787517
+Raw value output: 96
+Voltage A0 OUT: 0.4692081928
+Current: 0.0000469208
+Raw value VREF: 290
+Voltage A1 VREF: 1.4173997879
+Raw value output: 651
+Voltage A0 OUT: 3.1818182468
+Current: 0.0003181818
+Raw value VREF: 241
+Voltage A1 VREF: 1.1779080629
+Raw value output: 593
+Voltage A0 OUT: 2.8983383178
+Current: 0.0002898339
+Raw value VREF: 796
+Voltage A1 VREF: 3.8905181884
+Raw value output: 98
+Voltage A0 OUT: 0.4789833545
+Current: 0.0000478983
+Raw value VREF: 208
+Voltage A1 VREF: 1.0166177749
+Raw value output: 749
+Voltage A0 OUT: 3.6608016490
+Current: 0.0003660802
+Raw value VREF: 365
+Voltage A1 VREF: 1.7839686870
+Raw value output: 426
+Voltage A0 OUT: 2.0821113586
+Current: 0.0002082111
+Raw value VREF: 767
+Voltage A1 VREF: 3.7487781047
+Raw value output: 120
+Voltage A0 OUT: 0.5865102291
+Current: 0.0000586510
+Raw value VREF: 111
+Voltage A1 VREF: 0.5425220012
+Raw value output: 795
+Voltage A0 OUT: 3.8856306076
+Current: 0.0003885631
+Raw value VREF: 485
+Voltage A1 VREF: 2.3704788684
+Raw value output: 341
+Voltage A0 OUT: 1.6666666030
+Current: 0.0001666667
+Raw value VREF: 744
+Voltage A1 VREF: 3.6363637447
+Raw value output: 208
+Voltage A0 OUT: 1.0166177749
+Current: 0.0001016618
+Raw value VREF: 116
+Voltage A1 VREF: 0.5669599056
+Raw value output: 806
+Voltage A0 OUT: 3.9393939971
+Current: 0.0003939394
+Raw value VREF: 615
+Voltage A1 VREF: 3.0058650970
+Raw value output: 258
+Voltage A0 OUT: 1.2609970569
+Current: 0.0001260997
+Raw value VREF: 690
+Voltage A1 VREF: 3.3724339008
+Raw value output: 286
+Voltage A0 OUT: 1.3978494453
+Current: 0.0001397849
+Raw value VREF: 108
+Voltage A1 VREF: 0.5278592109
+Raw value output: 813
+Voltage A0 OUT: 3.9736070632
+Current: 0.0003973607
+Raw value VREF: 696
+Voltage A1 VREF: 3.4017596244
+Raw value output: 255
+Voltage A0 OUT: 1.2463343143
+Current: 0.0001246334
+Raw value VREF: 652
+Voltage A1 VREF: 3.1867058277
+Raw value output: 386
+Voltage A0 OUT: 1.8866080284
+Current: 0.0001886608
+Raw value VREF: 129
+Voltage A1 VREF: 0.6304985046
+Raw value output: 839
+Voltage A0 OUT: 4.1006841659
+Current: 0.0004100684
+Raw value VREF: 757
+Voltage A1 VREF: 3.6999022960
+Raw value output: 196
+Voltage A0 OUT: 0.9579667091
+Current: 0.0000957967
+Raw value VREF: 562
+Voltage A1 VREF: 2.7468230724
+Raw value output: 416
+Voltage A0 OUT: 2.0332355499
+Current: 0.0002033235
+Raw value VREF: 105
+Voltage A1 VREF: 0.5131964683
+Raw value output: 808
+Voltage A0 OUT: 3.9491691589
+Current: 0.0003949169
+Raw value VREF: 770
+Voltage A1 VREF: 3.7634408473
+Raw value output: 150
+Voltage A0 OUT: 0.7331378459
+Current: 0.0000733138
+Raw value VREF: 509
+Voltage A1 VREF: 2.4877810478
+Raw value output: 480
+Voltage A0 OUT: 2.3460409641
+Current: 0.0002346041
+Raw value VREF: 112
+Voltage A1 VREF: 0.5474095821
+Raw value output: 1023
+Voltage A0 OUT: 5.0000000000
+Current: 0.0005000000
+Raw value VREF: 495
+Voltage A1 VREF: 2.4193549156
+Raw value output: 140
+Voltage A0 OUT: 0.6842619895
+Current: 0.0000684262
+Raw value VREF: 477
+Voltage A1 VREF: 2.3313782215
+Raw value output: 371
+Voltage A0 OUT: 1.8132942199
+Current: 0.0001813294
+Raw value VREF: 0
+Voltage A1 VREF: 0.0000000000
+Raw value output: 308
+Voltage A0 OUT: 1.5053763389
+Current: 0.0001505376
+Raw value VREF: 624
+Voltage A1 VREF: 3.0498533248
+Raw value output: 0
+Voltage A0 OUT: 0.0000000000
+Current: 0.0000000000
+Raw value VREF: 7
+Voltage A1 VREF: 0.0342130994
+Raw value output: 629
+Voltage A0 OUT: 3.0742912292
+Current: 0.0003074291
+Raw value VREF: 618
+Voltage A1 VREF: 3.0205278396
+Raw value output: 12
+Voltage A0 OUT: 0.0586510229
+Current: 0.0000058651
+Raw value VREF: 247
+Voltage A1 VREF: 1.2072336673
+Raw value output: 441
+Voltage A0 OUT: 2.1554253101
+Current: 0.0002155425
+Raw value VREF: 31
+Voltage A1 VREF: 0.1515151500
+Raw value output: 398
+Voltage A0 OUT: 1.9452590942
+Current: 0.0001945259
+Raw value VREF: 636
+Voltage A1 VREF: 3.1085042953
+[Done] Closed the serial port 

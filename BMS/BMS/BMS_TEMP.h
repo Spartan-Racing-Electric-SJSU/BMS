@@ -63,6 +63,8 @@ union COMM_RD_REG {
 int8_t BMS_TEMP_NEXT(float rx_temp[TOTAL_IC]);
 float convert(uint16_t measure);
 
+#endif 
+
 /**
  * Under/Over Voltage Monitor
  * parameters : C inputs
@@ -148,5 +150,3 @@ float convert(uint16_t measure);
  * • RDCOMM
  *  - Reads 6 bytes of data followed by PEC 
  */
-
-#endif 

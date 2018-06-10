@@ -1,0 +1,82 @@
+// BMS_BALANCE.h
+#ifndef _BMS_BALANCE_H
+#define _BMS_BALANCE_H
+// Amount of integrated circuits
+#define TOTAL_IC 8
+// Percentage of SOC Imbalance 
+#define SOC_IMBALANCE_PERCENT
+// Battery capacity 
+#define BATTERY_CAPACITY 
+// Time in hours to balance cells 
+#define NUMBER_OF_HOURS_TO_BALANCE 
+// Nominal cell voltage (3.6V)
+#define NOMINAL_CELL_VOLTAGE 
+// Balance current for discharging 
+#define BALANCE_CURRENT (SOC_IMBALANCE_PERCENT * BATTERY_CAPACITY) / NUMBER_OF_HOURS_TO_BALANCE
+// Balance resistor for discharging 
+#define BALANCE_RESISTOR NOMINAL_CELL_VOLTAGE / BALANCE_CURRENT 
+#include <stdint.h>
+
+union COMM_WR_REG {
+    uint8_t bytes[6];
+    // Bit fields of Write register
+    struct COMM {
+        uint8_t ICOM0   : 4;
+        uint8_t D0      : 8;
+        uint8_t FCOM0   : 4;
+        uint8_t ICOM1   : 4;
+        uint8_t D1      : 8;
+        uint8_t FCOM1   : 4;
+        uint8_t ICOM2   : 4;
+        uint8_t D2      : 8;
+        uint8_t FCOM2   : 4;
+        // uint16_t PEC    : 16;
+    } fields;
+};
+
+union COMM_RD_REG {
+    uint8_t bytes[8];
+    // Bit fields of Read register 
+    struct COMM {
+        uint8_t ICOM0   : 4;
+        uint8_t D0      : 8;
+        uint8_t FCOM0   : 4;
+        uint8_t ICOM1   : 4;
+        uint8_t D1      : 8;
+        uint8_t FCOM1   : 4;
+        uint8_t ICOM2   : 4;
+        uint8_t D2      : 8;
+        uint8_t FCOM2   : 4;
+        uint16_t PEC    : 16;
+    } fields;
+};
+
+#define CELL_VOLTAGE_CONVERSION {0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1, /*MD[1]*/, /*MD[2]*/, 0x1, 0x1, /*DCP*/, 0x0, /*CH[2]*/, /*CH[1]*/, /*CH[0]*/}
+int8_t DISCHARGE_PERMITTED();
+
+/* 
+ * MD - determines filter corner of the ADC 
+ * CH - Determines which cell channels are converted 
+ * DCP - Determines if discharge is permitted 
+ * If DCP high at cell measure command, S Pin discharge states do not change
+ * If DCP low at cell measure command, S Pin discharge states will be disabled during measure 
+ * 
+ * Active Cell Balancing
+ * allows for higher current balancing without excessive heat 
+ * Also, energy recovery because current travels back to battery pack
+ * 
+ * Discharge Resistor
+ * balance_current = (percent_SOC_imbalance * battery_capacity) / number_of_hours_to_balance
+ * balance_resistor = nominal_cell_voltage / balance_current 
+ * 
+ * Balancing with internal transistors 
+ * 
+ * If using external transistors
+ * The LTC6804 already has pull-up PMOS transistor with 1k series Resistor
+ * The S pins used as digital outputs for driving gate of extern MOSFET
+ * 
+ * S Pin pulsing using STSCTRL/WRSCTRL commands 
+ * Interface with the 8584 Active Cell Balancing module 
+ */
+
+#endif 

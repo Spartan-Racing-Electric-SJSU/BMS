@@ -70,8 +70,6 @@ int8_t BMS_TEMP_next(float rx_temp[TOTAL_IC]) {
 	return res; //return any errors
 }
 
-
-
 float convert(uint16_t measure) {
 	float resistance = SERIES_RESISTOR / (65535 / measure - 1);
 	float steinhart;

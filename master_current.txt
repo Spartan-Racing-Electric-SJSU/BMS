@@ -1,0 +1,86 @@
+MSTR sensor
+
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 872
+Voltage: 4.2619748115
+Current: 0.0004261974
+Raw value: 872
+Voltage: 4.2619748115
+Current: 0.0004261974
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863
+Raw value: 873
+Voltage: 4.2668623924
+Current: 0.0004266863

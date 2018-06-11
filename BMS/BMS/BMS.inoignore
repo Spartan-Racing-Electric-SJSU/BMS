@@ -15,6 +15,7 @@
 #include "src/mcp2515.h"
 #include "src/Canbus.h"  
 #include "src/LTC68041_COMM.h"
+#include "src/defaults.h"
 // #include "BMS_TEMP.h"
 
 #define TOTAL_IC 8
@@ -239,12 +240,42 @@ void loop() {
   //   print_rxdata(rx_cfg);    
   // } while(input != 'q');
 
-  // i2c test 
-  LTC6804_initialize();
+  // i2c test   
   // LTC6804_wrcfg(TOTAL_IC, i2c_cfg);
-  int8_t bms_i2c = BMS_I2C_NEXT();
-  Serial.print("i2c error: ");
-  Serial.println(bms_i2c);
+  // int8_t bms_i2c = BMS_I2C_NEXT();
+  // Serial.print("i2c error: ");
+  // Serial.println(bms_i2c);
+
+  // uint8_t tx_data[TOTAL_IC][6];
+  // delay(50);
+	// //now build copies for each ic and address resistive dividers
+	// for (int i = 1; i < TOTAL_IC; i++) {
+	// 	memcpy(tx_data[i], 0x00, 6);
+	// 	Serial.write((const char *)tx_data[i]);
+	// 	Serial.println("Wrote data!\n");
+	// }	
+  // //transmit to pack
+	// LTC6804_wrcomm(TOTAL_IC, tx_data);
+	// LTC6804_stcomm(TOTAL_IC);
+  // delay(50);
+
+  // uint8_t rd_data[TOTAL_IC][8];
+  // Serial.print("rdcomm: ");
+  // Serial.println(LTC6804_rdcomm(TOTAL_IC, rd_data));
+
+  uint8_t *rx; 
+  Serial.println("transferred: ");
+  spi_transfer_byte(MCP2515_CS, 0x00, &rx);
+  spi_transfer_byte(MCP2515_CS, 0x00, &rx);
+  spi_transfer_byte(MCP2515_CS, 0x00, &rx);
+  spi_transfer_byte(MCP2515_CS, 0x00, &rx);  
+  Serial.write((const char *) rx);
+  spi_transfer_byte(MCP2515_CS, 0x14, &rx);
+  spi_transfer_byte(MCP2515_CS, 0x00, &rx);
+  spi_transfer_byte(MCP2515_CS, 0x00, &rx);
+  spi_transfer_byte(MCP2515_CS, 0x00, &rx);
+  Serial.write((const char *) rx);
+  delay(50);
 }
 
 // Definition I2C 
@@ -318,6 +349,7 @@ int8_t BMS_I2C_NEXT(/*float rx_i2c[TOTAL_IC]*/) // TODO: What is the point of th
 **************************************/
 void init_cfg()
 {
+  LTC6804_initialize();
   uint8_t tx_cfg[TOTAL_IC][6] = { { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00 },
                   { 0xF8, 0x19, 0x16, 0xA4, 0x00, 0x00 } };
   LTC6804_wrcfg(TOTAL_IC, tx_cfg);

@@ -152,28 +152,41 @@ float convert(uint16_t measure);
  */
 
 /**
- * LT4316, addressing resistors
+ * LT4316, addressing resistors, resistive dividers 
  * XORL - Lower Nibble Configuration Input, DC voltage here configures 
  *        lower nibbles of translation byte 
- * Channel  R6      R7
- * A        Open    0R
- * B        976K    102K
- * C        976K    182K
- * D        1M      280K
- * E        280K    1M 
- * F        182K    976K
- * G        102K    976K
- * H        0R      Open 
- * I        887K    1M     
+ * Channel  R6      R7      Byte
+ * A        Open    0R      0000
+ * B        976K    102K    0001
+ * C        976K    182K    0010
+ * D        1M      280K    0011
+ * E        280K    1M      1100
+ * F        182K    976K    1101
+ * G        102K    976K    1110
+ * H        0R      Open    1111
+ * I        887K    1M      1000
+ * XORH - Higher Nibble Configuration Input 
+ * 
+ * Send to this address: 
 */
 
 /**
  * LTC2451 ADC 16-bit 
  * Continuous Conversion Sequence, Read, Write 
+ * addr: 0010100
+ * Dec: 20
+ * Hex: 0x14
+ * Bit 8: 1 for read 0 for write 
+ * Issues NACK when address during conversion state -> SDA high 
+ * Issues ACK when conversion complete -> SDA low 
+ * 
+ * Read request + ACK -> 16 bit output data on falling edge 
  */
 
 /**
  * ADM3260 DC/DC Converter
  * VISO equation
  * viso = 1.23 x (Rtop + Rbottom) / Rbottom 
+ * 
+ * Decodes SDA and SCL from the 2451
  */

@@ -6,25 +6,54 @@
 
 // Global object declaration
 LT_TwoWire i2c;
+const int LT4316_READ_ADDRESS = 0x00; // Slave Address of LT4316 Resistive Dividers
+
+#define POWER_REGISTER 0x00 // Power configuration
+#define LTC2451_TEMP_READ_ADDRESS 0x14 // Temperature Read address 
+
+int D0, D_OUT; 
 
 void setup()
 {    
-    i2c.begin(10000);
+    i2c.begin(10000); // initiate LT_TwoWire library 
+    Serial.begin(9600);
+    delay(100);
+    // Enable measure
+    i2c.beginTransmission(LT4316_READ_ADDRESS);
+    i2c.write(POWER_REGISTER);
+    // Bit HIGH for enable measure
+    i2c.write(8);
+    i2c.endTransmission();
 }
 
 void loop()
 {
-    // // Master controls I2C bus
-    // // Master and Slave know the struct to transfer
-    // uint8_t buffer[10];
-    // buffer[0] = 0x00;
-    // buffer[1] = 0x14;
-    // i2c.write( buffer, 10);
+    // Start Bit 
+    // Slave Address 8-bit 
+    // Ack 
+    // Internal Register Address 8-bit 
+    // Ack 
+    // Data to send 8-bits 
+    // Ack 
+    // Stop bit 
 
+    // Start transmitting
+    i2c.beginTransmission(LT4316_READ_ADDRESS);
+    // Specify Registers for data
+    i2c.write(LTC2451_TEMP_READ_ADDRESS); 
+    // End I2C bus transmitting and transmit from registers 
+    i2c.endTransmission();
     // Request data from Slave, wait, place data into buffer, return number of bytes 
-    uint8_t buf[10];
-    int n = i2c.requestFrom(0x00, buf, 10);
-    Wire.readBytes( buf, n);
-    if ( n != 10)
-    Serial.println("Error, didn't receive 10 bytes");
+    int buffer_size = 2;
+    uint8_t buf[buffer_size];
+    int n = i2c.requestFrom(LT4316_READ_ADDRESS, buf, buffer_size);
+    if(i2c.available() <= buffer_size)
+    {
+        D0 = i2c.readBytes(buf, n);
+    }
+    if ( n != buffer_size) Serial.println("Error, didn't receive 2 bytes");
+    Serial.print("LTC2451 Read Data = ");
+    Serial.print(D0);
+    Serial.print("  LT4316 Data Out = ");
+    Serial.println(D_OUT);
 }

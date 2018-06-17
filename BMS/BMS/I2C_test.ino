@@ -6,9 +6,9 @@
 
 // Global object declaration
 LT_TwoWire i2c;
-const int LT4316_READ_ADDRESS = 0x00; // Slave Address of LT4316 Resistive Dividers
+const int LT4316_READ_ADDRESS = 0b00000000; // Slave Address of LT4316 Resistive Dividers
 
-#define POWER_REGISTER 0x00 // Power configuration
+#define POWER_REGISTER 0x00 // Power configuration  
 #define LTC2451_TEMP_READ_ADDRESS 0x14 // Temperature Read address 
 
 int D0, D_OUT; 
@@ -36,6 +36,20 @@ void loop()
     // Data to send 8-bits 
     // Ack 
     // Stop bit 
+
+    /**
+     * LTC4316 I2C address              000_0000
+     * LTC4316 Output Register Address 
+     * ADM3260 SDA address 
+     * ADM3260 SCL Address 
+     * ADM3260 Output Register Address 
+     * LTC2451 SCL address 
+     * LTC2451 SDA address 
+     * LTC2451 Temp + Address
+     * LTC2451 Temp - Address 
+     * LTC2451 Start Bits               0010100
+     * LTC2451 Command bit              1 for Read, 0 for Write 
+     */ 
 
     // Start transmitting
     i2c.beginTransmission(LT4316_READ_ADDRESS);

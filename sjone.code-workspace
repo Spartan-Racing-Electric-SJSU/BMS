@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "SRE"
+		},
+		{
+			"path": "SJSU-Dev"
+		},
+		{
+			"path": "C:\\Users\\Timothy_Le\\Google Drive\\CMPE 148"
+		},
+		{
+			"path": "Javascript_code"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.tcc": "cpp",
+			"ratio": "cpp",
+			"system_error": "cpp",
+			"type_traits": "cpp",
+			"bitset": "cpp",
+			"io.h": "c",
+			"array": "cpp",
+			"scoped_allocator": "cpp",
+			"functional": "cpp",
+			"chrono": "cpp",
+			"motorcontroller.h": "c"
+		}
+	}
+}

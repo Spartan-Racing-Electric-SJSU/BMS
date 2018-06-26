@@ -1013,7 +1013,7 @@ void spi_write_array(uint8_t len, // Option: Number of bytes to be written on th
                     )
 {
   for (uint8_t i = 0; i < len; i++)
-  {
+{
     spi_write((int8_t)data[i]);
   }
 }

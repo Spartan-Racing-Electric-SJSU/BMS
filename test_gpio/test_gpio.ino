@@ -94,7 +94,7 @@ void loop()
   // setup GPIO registers
   LTC681x_set_cfgr_gpio(TOTAL_IC,bms_ic,gpio_reg);
   LTC681x_set_cfgr_gpio(TOTAL_IC,bms_ic24,gpio_reg);
-  LTC681x_set_cfgr_gpio(TOTAL_IC,bms_ic48,gpio_reg);
+  // LTC681x_set_cfgr_gpio(TOTAL_IC,bms_ic48,gpio_reg);
 
   //TODO: Organize this into a loop after test
   // Read IC 0 cfg
@@ -121,21 +121,28 @@ void loop()
   bms_ic24[0].com.tx_data[4] = B00001111; //ICOM2,D2
   bms_ic24[0].com.tx_data[5] = B11111001; //D2,FCOM2
 
-  bms_ic48[0].com.tx_data[0] = B01101111; //ICOM0,D0
-  bms_ic48[0].com.tx_data[1] = B11110000; //D0,FCOM0
-  bms_ic48[0].com.tx_data[2] = B01101111; //ICOM1,D1
-  bms_ic48[0].com.tx_data[3] = B11110000; //D1,FCOM1   
-  bms_ic48[0].com.tx_data[4] = B10011111; //ICOM2,D2
-  bms_ic48[0].com.tx_data[5] = B11111001; //D2,FCOM2
+  // bms_ic48[0].com.tx_data[0] = B01101111; //ICOM0,D0
+  // bms_ic48[0].com.tx_data[1] = B11110000; //D0,FCOM0
+  // bms_ic48[0].com.tx_data[2] = B01101111; //ICOM1,D1
+  // bms_ic48[0].com.tx_data[3] = B11110000; //D1,FCOM1   
+  // bms_ic48[0].com.tx_data[4] = B10011111; //ICOM2,D2
+  // bms_ic48[0].com.tx_data[5] = B11111001; //D2,FCOM2
   
   // Redundant wakeup
   wakeup_sleep(TOTAL_IC);
  
+  //READ PEC, send 24 clocks  
+  LTC6811_rdcomm(TOTAL_IC,bms_ic24);  
+  LTC681x_stcomm();
+  LTC6811_rdcfg(TOTAL_IC,read_bms_ic24);
+  Serial.print("read 24:\t");
+  print_data(TOTAL_IC,read_bms_ic24);
   //Read IC 0 of i2c bus  
+  LTC6811_wrcfg(TOTAL_IC,bms_ic);
   Serial.println("read ic0");
   LTC6811_wrcomm(TOTAL_IC,bms_ic);  
   LTC681x_stcomm();
-  //READ PEC, send 24 clocks  
+  //READ PEC again, send 24 clocks  
   LTC6811_rdcomm(TOTAL_IC,bms_ic24);  
   LTC681x_stcomm();
   LTC6811_rdcfg(TOTAL_IC,read_bms_ic24);

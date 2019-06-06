@@ -54,15 +54,15 @@ void setup()
   LTC681x_init_cfg(TOTAL_IC, bms_ic24);
   LTC6811_reset_crc_count(TOTAL_IC,bms_ic24);
   LTC6811_init_reg_limits(TOTAL_IC,bms_ic24);
-  LTC681x_init_cfg(TOTAL_IC, bms_ic48);
-  LTC6811_reset_crc_count(TOTAL_IC,bms_ic48);
-  LTC6811_init_reg_limits(TOTAL_IC,bms_ic48);
-  LTC681x_init_cfg(TOTAL_IC, read_bms_ic24);
-  LTC6811_reset_crc_count(TOTAL_IC,read_bms_ic24);
-  LTC6811_init_reg_limits(TOTAL_IC,read_bms_ic24);
-  LTC681x_init_cfg(TOTAL_IC, read_bms_ic48);
-  LTC6811_reset_crc_count(TOTAL_IC,read_bms_ic48);
-  LTC6811_init_reg_limits(TOTAL_IC,read_bms_ic48);
+  // LTC681x_init_cfg(TOTAL_IC, bms_ic48);
+  // LTC6811_reset_crc_count(TOTAL_IC,bms_ic48);
+  // LTC6811_init_reg_limits(TOTAL_IC,bms_ic48);
+  // LTC681x_init_cfg(TOTAL_IC, read_bms_ic24);
+  // LTC6811_reset_crc_count(TOTAL_IC,read_bms_ic24);
+  // LTC6811_init_reg_limits(TOTAL_IC,read_bms_ic24);
+  // LTC681x_init_cfg(TOTAL_IC, read_bms_ic48);
+  // LTC6811_reset_crc_count(TOTAL_IC,read_bms_ic48);
+  // LTC6811_init_reg_limits(TOTAL_IC,read_bms_ic48);
 }
 
 void print_data(uint8_t num_ic, cell_asic * ic) 
@@ -98,12 +98,12 @@ void loop()
 
   //TODO: Organize this into a loop after test
   // Read IC 0 cfg
-  bms_ic[0].com.tx_data[0] = 0x62;
-  bms_ic[0].com.tx_data[1] = 0x98;
-  bms_ic[0].com.tx_data[2] = 0x0f;
-  bms_ic[0].com.tx_data[3] = 0xf0;
-  bms_ic[0].com.tx_data[4] = 0x0f;
-  bms_ic[0].com.tx_data[5] = 0xf9;
+  bms_ic[0].com.tx_data[0] = 0x62; // 01100010 -> Start Master, Addr
+  bms_ic[0].com.tx_data[1] = 0x98; // 10011000 -> Addr, RdBit, Master NACK
+  bms_ic[0].com.tx_data[2] = 0x0f; // 00001111 -> SDA Low, High
+  bms_ic[0].com.tx_data[3] = 0xf0; // 11110000 -> High, ACK Master
+  bms_ic[0].com.tx_data[4] = 0x0f; // 00001111 -> SDA Low, High
+  bms_ic[0].com.tx_data[5] = 0xf9; // 11111001 -> High, NACK Slave+Master Stop
 
   // Read IC 1 cfg
   bms_ic[1].com.tx_data[0] = 0x62;
@@ -114,12 +114,12 @@ void loop()
   bms_ic[1].com.tx_data[5] = 0xf9;
 
   //https://ez.analog.com/power/f/q-a/110060/ltc6811-communication-through-i2c/334332
-  bms_ic24[0].com.tx_data[0] = B01100010; //ICOM0,D0
-  bms_ic24[0].com.tx_data[1] = B10000000; //D0,FCOM0  
-  bms_ic24[0].com.tx_data[2] = B00001111; //ICOM1,D1
-  bms_ic24[0].com.tx_data[3] = B11111000; //D1,FCOM1
-  bms_ic24[0].com.tx_data[4] = B00001111; //ICOM2,D2
-  bms_ic24[0].com.tx_data[5] = B11111001; //D2,FCOM2
+  bms_ic24[0].com.tx_data[0] = B01100010; // Start, Addr
+  bms_ic24[0].com.tx_data[1] = B10000000; // Addr, WrBit, Master ACK
+  bms_ic24[0].com.tx_data[2] = B00001111; // Blank, High
+  bms_ic24[0].com.tx_data[3] = B11111000; // High, Master NACK
+  bms_ic24[0].com.tx_data[4] = B00001111; // Blank, High
+  bms_ic24[0].com.tx_data[5] = B11111001; // High, Master NACK+Stop
 
   // bms_ic48[0].com.tx_data[0] = B01101111; //ICOM0,D0
   // bms_ic48[0].com.tx_data[1] = B11110000; //D0,FCOM0
@@ -132,22 +132,22 @@ void loop()
   wakeup_sleep(TOTAL_IC);
  
   //READ PEC, send 24 clocks  
-  LTC6811_rdcomm(TOTAL_IC,bms_ic24);  
-  LTC681x_stcomm();
-  LTC6811_rdcfg(TOTAL_IC,read_bms_ic24);
   Serial.print("read 24:\t");
-  print_data(TOTAL_IC,read_bms_ic24);
+  LTC6811_wrcfg(TOTAL_IC,bms_ic24);
+  LTC6811_wrcomm(TOTAL_IC,bms_ic24);  
+  LTC681x_stcomm();
+  print_data(TOTAL_IC,bms_ic24);
   //Read IC 0 of i2c bus  
-  LTC6811_wrcfg(TOTAL_IC,bms_ic);
   Serial.println("read ic0");
-  LTC6811_wrcomm(TOTAL_IC,bms_ic);  
+  LTC6811_rdcomm(TOTAL_IC,bms_ic);  
   LTC681x_stcomm();
+  LTC6811_rdcfg(TOTAL_IC,bms_ic);
   //READ PEC again, send 24 clocks  
-  LTC6811_rdcomm(TOTAL_IC,bms_ic24);  
-  LTC681x_stcomm();
-  LTC6811_rdcfg(TOTAL_IC,read_bms_ic24);
   Serial.print("read 24:\t");
-  print_data(TOTAL_IC,read_bms_ic24);
+  LTC6811_wrcfg(TOTAL_IC,bms_ic24);
+  LTC6811_wrcomm(TOTAL_IC,bms_ic24);  
+  LTC681x_stcomm();
+  print_data(TOTAL_IC,bms_ic24);
   //READ PEC, send 48 clocks    
   // LTC6811_rdcomm(TOTAL_IC,bms_ic48);  
   // LTC681x_stcomm();
